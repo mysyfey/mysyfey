@@ -8,9 +8,12 @@
         }
 
         .a-style {
-            font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
-            font-size: 1.1rem;
+            //font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+            //font-size: 1.1rem;
+            font-size: 17px;
             color:#333333;
+            letter-spacing: 0.8px;
+            line-height: 1.5;
         }
 
         *, ::after, ::before {
@@ -952,9 +955,10 @@
             text-align: center;
         }
 
-        .anchor-statement-header h3 span{
-            line-height: 1.4;
+        .anchor-statement-header h3 span{            
+            line-height: 1.7;
             display: block;
+            letter-spacing: 1px;
         }
 
         .anchor-statement h3 {
@@ -962,14 +966,15 @@
         }
 
         .large-p{
-            font-size: 1.15rem;
-            line-height: 1.45;
-            font-weight: 200;
+            font-size: 1.12rem;
+            line-height: 1.5;
+            //font-weight: 200;
         }
 
         .a-style h3 {
             font-weight: 500;
             line-height: 1.15!important;
+            letter-spacing: 2px;
         }
 
         .a-style h3+p {
@@ -1009,10 +1014,11 @@
 
         .join-us {
             text-align: center;
-            font-size: 20px;
+            //font-size: 20px;
             font-weight: 200;
             padding-top:70px;
             padding-bottom:70px;
+            line-height: 1.6;
         }
 
 
@@ -1095,7 +1101,7 @@
         }
 
         .problem-solver-text .typography-quote{
-            font-weight: 200;            
+            line-height: 1.25!important;      
         }
 
         .problem-solver-text>div{
@@ -1192,7 +1198,7 @@
         }
 
         .team-member-profile h3 {
-            font-size: 32px;
+            font-size: 28px;
         }
 
         .team-member-more-button{
@@ -1290,9 +1296,9 @@
         }
 
         .tile-text span+span{
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 500;
-            margin-top:5px;
+            margin-top:2px;
         }
 
         .center-text {
@@ -1304,7 +1310,8 @@
         }
 
         .a-style blockquote p{
-            font-weight: 200;f
+            font-weight: 200;
+            font-size: 1.4rem;
         }
 
         .recruiting:after {
@@ -1323,6 +1330,14 @@
 
         .linear-grey>div{
             background:transparent;
+        }
+
+        .typography-headline-medium {
+            font-size: 47px;
+        }
+
+        .typography-headline-small {
+            font-size: 39px;
         }
 
 
@@ -1351,6 +1366,7 @@
         .mobile-show {
             display: none;
         }
+        
 
     /* others */
 
@@ -1445,11 +1461,23 @@
             }
 
             .a-style  {
-                font-size: 1.2rem;
+                //font-size: 1.2rem;
+            }
+
+            .a-style h3  {
+                line-height: 1.23!important;
+            }
+
+            .typography-quote {
+                font-size: 32px;
+            }
+
+            .typography-title-large {
+                font-size: 27px;
             }
 
             .large-p{
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
 
                 
@@ -1470,7 +1498,7 @@
             }
 
             .a-style blockquote p{
-                font-size: 1.65rem;
+                font-size: 1.45rem;
             }
 
             .a-style .row>*,.a-style .row-medium>*{
@@ -1808,6 +1836,27 @@
             /*.text-rail .typography-headline-small {
                 text-align: center;
             }*/
+
+            .a-style {
+                font-size: 19px;
+            }
+
+            .mobile-disappear {
+                display: none;
+            }
+
+            .typography-quote,
+            .typography-title-large {
+                font-size: 23px;
+            }
+
+            .typography-headline-medium {
+                font-size: 29px;
+            }
+
+            .typography-headline-small {
+                font-size: 27px;
+            }
 
 
             .tile a {
