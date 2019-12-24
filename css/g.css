@@ -1017,8 +1017,7 @@
             //font-size: 20px;
             font-weight: 200;
             padding-top:70px;
-            padding-bottom:70px;
-            line-height: 1.6;
+            padding-bottom:70px;            
         }
 
 
@@ -1466,6 +1465,10 @@
 
             .a-style h3  {
                 line-height: 1.23!important;
+            }
+
+            .join-us {
+                line-height: 1.6;
             }
 
             .typography-quote {
