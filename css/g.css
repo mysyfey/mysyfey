@@ -1015,7 +1015,7 @@
         .join-us {
             text-align: center;
             //font-size: 20px;
-            font-weight: 200;
+            //font-weight: 200;
             padding-top:70px;
             padding-bottom:70px;            
         }
@@ -1130,7 +1130,7 @@
 
         .typography-subsection-headline {
             font-size: 1.5rem; 
-            font-weight: 200;            
+            //font-weight: 200;            
         }
 
         .further-information .typography-subsection-headline {
@@ -1309,7 +1309,7 @@
         }
 
         .a-style blockquote p{
-            font-weight: 200;
+            //font-weight: 200;
             font-size: 1.4rem;
         }
 
