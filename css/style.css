@@ -1,0 +1,862 @@
+    body {
+        //color: rgb(34, 36, 38);
+        background-color: white;
+        //font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+        margin:0;
+    }
+
+    img,
+    h1,
+    h2,
+    h3,
+    p,
+    button
+    {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    header ul,
+    .header ul,
+    footer ul,
+    .footer ul,
+    .bare-ul {
+        list-style-type: none;
+        margin:0;
+        padding:0;
+    }
+
+    svg {
+        fill: currentColor;
+        vertical-align: middle;
+    }
+
+    img{
+        max-width:100%;
+    }
+
+    button {
+        background: transparent;
+        border-width: initial;
+        border-style: none;
+        border-color: initial;
+        border-image: initial;
+        outline: none;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
+        box-shadow:none;
+        color: inherit;
+        cursor: pointer;
+    }
+
+
+        whitespace {
+            display:inline;white-space: nowrap;
+        }
+
+
+    footer {
+        background-color: black;
+        padding: 80px 32px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .inner-footer {
+        max-width: 990px;
+    }
+
+    hr {
+        color: rgba(26, 26, 26, .15);
+        background-color: rgba(26, 26, 26, .15);
+        height: 1px;
+        border: none;
+        margin: 0;
+    }
+
+    footer hr {
+        background-color: rgba(255, 255, 255, .25);
+        margin: 80px 0;
+    }
+
+    .social-media {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+        margin: 0 5px;
+    }
+
+    .social-media>div {
+        background-color:white;
+        width: 100%;
+        height: 100%;
+    }
+
+    .social-media>svg {
+        fill: white;
+    }
+
+    .company-info {
+        color: #ababab;
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+
+
+    .typography-headline-mega {
+        font-size: 100px;
+        line-height: 1.04;
+        font-weight: 600;
+    }
+
+
+
+    .typography-headline-super {
+        font-size: 80px;
+        line-height: 1.25; //font-weight: 600;
+    }
+
+    .typography-overview-headline,
+    .typography-headline-elevated {
+        font-size: 64px;
+        line-height: 1.0625;
+        letter-spacing: -.009em;
+    }
+
+    .typography-headline-large {
+        font-size: 60px;
+        line-height: 1.2;
+    }
+
+    .typography-headline-medium {
+        font-size: 54px;
+        margin-bottom: 25px;
+    }
+
+    .typography-headline {
+        font-size: 48px;
+        line-height: 1.2; //font-weight: 600;
+        letter-spacing: 0;
+        margin-bottom: 25px;
+    }
+
+    .typography-headline-small {
+        font-size: 45px;
+        line-height: 1.2; 
+        letter-spacing: .005em;
+    }
+
+    .typography-manifesto {
+        font-size: 40px;
+        line-height: 1.25;
+        letter-spacing: .004em;
+    }
+
+    .typography-quote {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
+    .typography-title-intro,
+    .typography-title-large {
+        font-size: 32px;
+        line-height: 1.25;
+    }
+
+    .typography-title {
+        font-size: 26px;
+        line-height: 1.25;
+    }
+
+    .typography-eyebrow {
+        font-size: 24px;
+        line-height: 1.36;
+    }
+
+    .typography-eyebrow-small {
+        font-size: 21px;
+    }
+
+    .small-text {
+        font-size: 18px!important;
+    }
+
+    .flex-center {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .shade,
+    .deep-shade {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .cover-img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .center-content {    
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+    .row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-flow: row;
+    }
+
+    .desk-half{
+        width: 50%;
+    } 
+
+    .hollow-button,
+    .twitter-button {
+        cursor: pointer;
+        padding: 9px 30px 8px;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 16px;
+        display: inline-block;
+    }
+
+    .hollow-button {
+        border: 1px solid;
+    }
+
+    .hard-hollow-button {
+        font-size: 16px;
+        font-weight: bold;
+        border: 2px solid;
+    }
+
+    .hard-hollow-button,
+    .ButtonBox {
+        padding: 13px 18px;
+    }
+
+
+    .arrow-button {
+        padding:15px 50px 16px 20px; 
+    }
+
+    .hollow-container {
+        margin-top: 40px;
+    }    
+
+
+    .header {
+        padding:0 70px;
+        height:102px;
+        line-height: 102px;
+        position: relative;
+        background:white;
+    }
+
+    fixed-header {
+        -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1) !important;
+        -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1) !important;
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    nav {
+        float:right;
+    }
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    .nav-link {
+        color:rgba(0, 0, 0, 0.6)!important;
+        font-size:18px;
+        padding:0;
+        text-decoration: none;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        float:left;
+    }
+
+    .nav-link + .nav-link {
+        margin-left: 25px;
+    }
+
+    .nav-link.current {
+        color:#3b8ff2!important;
+    }
+
+    .nav-link .join {
+        border: 2px solid #3b8ff2;
+        display: inline;
+        padding: 4px 14px;
+    }
+
+    .nav-link:hover {
+        opacity:0.7;
+    }
+
+    .logo {
+        display: inline;
+        
+    }
+
+    .logo img {
+        height:50px;
+        vertical-align: middle;
+    }
+
+    .mobile-menu-bar{
+        display: none;
+        float:right;
+        cursor: pointer;
+    }
+
+    .nav-btn {
+        top: -5px;
+        position: relative;
+        width: 24px;
+    }
+
+    .nav-btn div{
+        width: 24px;
+        height: 2px;
+        position: absolute;
+        left: 0px;
+        background: #3b8ff2;
+        transition: all 250ms cubic-bezier(0.86, 0, 0.07, 1) 0s
+    }
+
+    .nav-btn div::before {
+        content: "";
+        top: -8px;
+        width: 24px;
+        height: 2px;
+        position: absolute;
+        left: 0px;
+        transform: rotate(0deg);
+        background: #3b8ff2;
+        transition: all 250ms cubic-bezier(0.86, 0, 0.07, 1) 0s;
+    }
+
+    .nav-btn div::after {
+        top: 8px;
+        content: "";
+        width: 24px;
+        height: 2px;
+        position: absolute;
+        left: 0px;
+        transform: rotate(0deg);
+        background: #3b8ff2;
+        transition: all 250ms cubic-bezier(0.86, 0, 0.07, 1) 0s;
+    }
+
+    .nav-menu {
+        position: absolute;
+        z-index: 20;
+        left: 0px;
+        top: 0px;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        background: rgb(87, 62, 222);
+    }
+
+    .mobile-menu {
+        position: relative;
+        width: 100%;
+        z-index: 999;
+        overflow: hidden;
+        max-height:0;
+        background: #fff;
+        -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .mobile-menu>div {        
+        padding: 5%;
+        border-top: 3px solid #2ea3f2;
+    }
+
+    .mobile-menu-show{
+        max-height:800px;
+    }
+
+    .mobile-menu a {
+        display: block;
+        padding: 10px 5%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+        color: #666 !important;
+        font-size: 13px;
+        font-weight: bold;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        line-height: 3;
+    }
+
+    .mobile-menu .current {
+        background-color: rgba(0, 0, 0, 0.03);
+    }
+
+    .mobile-menu a:hover {
+        opacity:0.7;
+    }
+
+    .mobile-menu-overlay {
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:0;
+        background: transparent;
+        z-index: 9;
+        display: none;
+    }
+
+    .overlay-show{
+        display: block;
+    }
+
+    .vertical-align {
+        height: 100%;
+        display:flex;
+        align-items: center;
+    }
+
+    .wide-content-section{
+        max-width:1592px;
+    }
+
+    .medium-content-section{
+        max-width: 1352px;
+    }
+
+    .slim-content-section{
+        max-width: 1024px;
+    }
+        
+    .freedom-ribbon {
+        position: relative;
+    }
+
+    .freedom-ribbon:after {
+        background: #f00;
+        bottom: 0px;
+        content: "";
+        display: block;
+        height: 5px;
+        left: 0px;
+        position: absolute;
+        right: 0px;
+        z-index: -1;
+    }
+
+
+
+    /*center {
+        margin:0 30px;
+    }
+
+    .main-content {
+        width: 720px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .top-card {
+        margin-top: -20px;
+    }
+
+    .card {
+        position: relative;
+        padding-bottom: 0;
+        background: white;
+        border-radius: 5px;
+        padding: 80px 60px;
+        margin-bottom: 1.55rem;
+    }*/
+
+    .banner {
+        background: rgb(255, 255, 255) ;
+        color: rgb(74, 74, 74) ;
+        position: fixed;
+        overflow: hidden;
+        z-index: 2147483647;
+        width: 100%;
+        left: 0;
+        font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+        box-shadow: 0 5px 40px rgba(0,0,0,.15);
+        border-radius: 0 0 4px 4px;
+        height:52px;
+        transition: top 300ms ease-in-out;
+        top:-52px;
+    }
+
+    .banner-down{
+        top:-1px;
+    }
+
+    .banner-up{
+        top:-52px;
+    }
+
+
+    .banner-exit-done,
+    .banner-enter {
+      top: -52px;
+    }
+
+    .banner-enter-active {
+      top:-1px;
+    }
+
+    .banner-enter-done,
+    .banner-exit {
+      top:-1px;
+    }
+
+    .banner-exit-active {
+      top:-52px;
+    }
+
+    .banner-logo{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin-left: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    .banner-logo-img {
+        width: 32px;
+        opacity: .3;
+        transition: opacity .2s;
+    }
+
+    .banner-logo-img:hover{
+        opacity: 1;
+    }
+
+    .banner-section{
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .banner-section p { 
+        display: inline;
+    }
+
+    .banner-dclr {
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 15px;
+    }
+
+    .banner-btn {
+        margin-top: -3px;
+        background: rgb(236, 0, 140) ;
+        color: rgb(255, 255, 255) ;
+        display: inline-block;
+        vertical-align: middle;
+        width: auto;
+        padding: 5px 10px;
+        border-radius: 2px;
+        font-size: 13px;
+        line-height: 1.25;
+        box-shadow: 0 1px 4px rgba(61,72,82,.16);
+        opacity: .9;
+        transition: opacity .2s;
+        cursor: pointer;
+    }
+
+    .banner-btn p{
+        font-size: 13px;
+    }
+
+
+
+    .scroll-anim,.will-change-none{
+        will-change: auto;
+    }
+
+    .will-change-transform {
+        will-change: transform;
+    }
+
+    .will-change-opacity-transform {
+        will-change: opacity,transform;
+    }
+
+    .will-change-opacity {
+        will-change: opacity;
+    }
+
+
+    .scrollMagic-no-display {
+        visibility: hidden;
+    }
+
+    .scrollMagic-display {
+        visibility: visible;
+    }
+
+
+        .light-off {
+            opacity:0;
+            transition: .2s opacity;
+        }
+
+        .light-on {
+            opacity:1;
+            transition: .2s .2s opacity;
+        }
+
+
+    @media only screen and (max-width: 1442px) {
+        .typography-manifesto {
+            font-size: 32px;
+        }
+
+    }
+
+    @media only screen and (max-width: 1068px) {
+
+        .typography-headline-super {
+            font-size: 64px;
+        }
+
+        .typography-headline {
+            font-size: 40px;
+        }
+
+        .typography-headline-elevated {
+            font-size: 48px;
+            line-height: 1.08365;
+            letter-spacing: -.003em;
+        }
+
+        .typography-hero-headline {
+            font-size: 35px;
+            line-height: 1.14286;
+            letter-spacing: .008em;
+        }
+
+        .typography-card-subhead,
+        .typography-quote {
+            font-size: 32px;
+        }
+
+        .typography-title-large {
+            font-size: 30px;
+        }
+
+        .typography-manifesto {
+            font-size: 28px;
+        }
+
+        .typography-eyebrow-small {
+            font-size: 19px;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+
+        .mobile-menu-bar{
+            display: block;
+            width: 24px;
+            height: 24px;
+        }
+
+        .header {
+            height:80px;
+            line-height:80px;
+            padding:0 9%;
+        }
+
+        .logo img {
+            height:30px;
+        }   
+
+        .mobile-hide{
+            display: none;
+        }
+
+    }
+
+    @media only screen and (min-width: 410px) {
+        .nowrap {
+            display: inline!important;
+            white-space: nowrap;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+
+    }
+
+    @media (max-width: 853px) {
+    }
+
+    @media only screen and (max-width: 767px) {
+
+        .mobile-row {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            flex-flow: row;
+        }
+
+        .mobile-row>* {
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+        }
+
+        .row {
+            display: block;
+        }
+
+
+        .rwo>*,
+        .mobile-full{
+            width: 100%;
+        }
+
+        .typography-headline-giant {
+            font-size:160px;
+            line-height: 1;
+        }
+
+        .typography-headline-mega{
+            font-size: 48px;
+        }
+
+        .typography-headline-super {
+            font-size: 44px;
+            line-height: 1.1;
+        }
+
+        .typography-headline-elevated {
+            font-size: 40px;
+            line-height: 1.1;
+        }
+
+        .typography-headline,
+        .typography-headline-small,
+        .typography-headline-medium,
+        .typography-headline-large {
+            font-size: 32px;
+            line-height: 1.225;
+        }
+
+        .typography-quote {
+            font-size: 30px;
+        }
+
+        .typography-title-large,
+        .typography-title-intro,
+        .typography-overview-headline {
+            font-size: 28px;
+            line-height: 1.14286;
+        }
+
+
+        .typography-title,
+        .typography-card-subhead {
+            font-size: 24px;
+            line-height: 1.29167;
+            letter-spacing: 0.004em;
+        }
+
+        .typography-eyebrow-significant {
+            font-size: 26px;
+            line-height: 1.36;
+        }
+
+        .typography-eyebrow-large {
+            font-size: 22px;
+            line-height: 1.36;
+            margin-bottom: 10px;
+        }
+
+        .typography-eyebrow {
+            font-size: 20px;
+        }
+
+        .small-text {
+            font-size: 16px!important;
+        }
+
+        /*.main-content {
+            width:auto;
+            margin:0 27px;
+        }   
+
+        .white-header .main-content{
+            width:100%;
+        }*/
+
+        .banner-logo{
+            display: none
+        }
+
+        .banner-section {
+            padding: 12px 0 12px 13px;
+            text-align: left;
+        }
+
+        .banner-dclr {
+            font-size:17px;
+        }
+
+        .banner-btn {
+            position: absolute;
+            right: 13px;
+            margin: 10px 0;
+            top: 0;
+        }
+    }

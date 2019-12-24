@@ -1,0 +1,350 @@
+    
+    body{
+        //font-size:17px;
+        line-height: 1.47059;
+        font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;        
+        overflow-x: hidden;
+    }
+
+    figure {
+        margin:0;
+    }
+
+
+    .apb-section-content {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 980px;
+    }
+
+    .apb-fullscreen{
+        position: relative;
+        width: 100%;
+    }
+
+    .sticky-thing{
+        position: -webkit-sticky;
+        position: sticky;
+        height:100vh;
+        top:0;
+    }
+
+    .sticky-after{
+        position: relative;
+    }
+
+
+
+    .one-hundred-section{
+        height: 100vh;
+    }
+    
+    .one-hundred-up {
+        margin-top: -100vh
+    }
+
+
+    .masked-text{
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent !important;
+        background-repeat: no-repeat;
+    }
+
+    .pink-blue-mask {        
+        background-image: url(/images/apple-texture.jpg);
+    }
+
+    .orange-mask {        
+        background-image: url(/images/apple-texture3.jpg);
+    }
+
+    .gold-mask {        
+        background-image: url(/images/apple-texture2.jpg);
+    }
+
+    .pink-gold-mask {        
+        background-image: url(/images/apple-texture4.jpg);
+    }
+
+    .silver-blue-mask {        
+        background-image: url(/images/apple-texture5.jpg);
+    }
+
+    .unmasked {
+        color:#fff;
+    }
+
+    .apple-button:hover {
+        color:black;
+        text-decoration: none;
+        background: #fff;
+        -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+        transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+        -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+        transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+    }
+
+    .apple-button{
+        display: inline-block;
+        font-weight: 600;
+        margin-top: 40px;
+        padding: 10px 23px;
+        border-radius: 46px;
+        border: 2px solid #fff;
+        -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+        transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+
+        -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+        transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+    }
+
+
+
+    .apple-nav {
+        height: 52px;
+        z-index: 9997;
+        top:0;
+        position: fixed;
+        width:100%;
+        background-color: rgba(0,0,0,0.85); 
+        font-size: 16px;
+        line-height: 1.14286;
+        //font-weight: 600;
+        letter-spacing: .011em;  
+        color:#fff;    
+    }
+
+    .apple-nav:after {
+        background-color: rgba(51,51,51,0.75);
+        margin-left: 0;
+        left: 0;
+        width: 100%;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 100%;
+        height: 1px;
+        z-index: 1;  
+    }
+
+    .apple-nav div{
+        height: 100%;
+    }
+
+    .main-section {
+        position: relative;
+        height: 800px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .main-section .flex-center div {
+        width: 100%;
+        padding: 0 60px;
+    }
+
+    .main-section .typography-headline {
+        line-height: 1.5;
+        letter-spacing: 2px;
+        //margin-top: 15px;
+    }
+
+    .main-section .flex-center{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-section .shade{
+        background-color: rgba(0, 0, 0, 0.45);
+    }
+
+    .main-img {
+        background-image: url('/images/drive.jpg');
+    }
+
+    .wide-content-section{
+        max-width:1592px;
+    }
+
+    .medium-content-section{
+        max-width: 1352px;
+    }
+
+    .slim-content-section{
+        max-width: 1024px;
+    }
+
+    .main-content-container{
+        padding:120px 50px;
+    }
+
+    .pure-text-columns {
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+
+    .pure-text-col{
+        padding-left:5%;
+        padding-right:50px;
+    }
+
+    .pure-text-col + .pure-text-col {
+        padding-right:5%;
+        padding-left:25px;
+    }
+
+    .pure-text-col .typography-headline{
+        max-width: 80%; 
+    }
+
+    .pure-text-col .typography-eyebrow {
+        color: #111;
+    }
+
+    .animae {
+        transition: padding 250ms ease-in
+    }
+
+    .fluid-content {
+        position: relative;
+        max-width: 1080px;
+        width: calc(100vw - 200px);
+    }
+
+    .manifesto-content {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .fluid-content-padded {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    @media only screen and (min-width: 1700px) {
+
+        .fluid-content {
+            width: calc(100vw - 320px);
+            max-width: 1440px;
+        }
+
+        .fluid-content-padded {
+            padding-left: 160px;
+            padding-right: 160px;
+        }
+
+        .pillar-hero-headline {
+            max-width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .manifesto-content {
+            padding-top: 160px;
+            padding-bottom: 160px;
+        }
+    }
+
+    @media only screen and (min-width: 1442px) {
+        .main-section{
+            height: 950px;
+        }
+      
+    }
+
+    @media only screen and (max-width: 1068px) {
+        .fluid-content {
+            max-width: 840px;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+
+        .pure-text-col .typography-headline{
+            max-width: 100%; 
+        }
+
+        .pure-text-col{
+            padding-left:0;
+        }
+
+        .pure-text-col + .pure-text-col{
+            padding-right:0;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+
+        .pad-section-container{
+            padding-left:60px;
+            padding-right:60px;
+        }
+    }
+
+    @media (max-width: 853px) {
+    }
+
+    @media only screen and (max-width: 767px) {
+
+
+        .silver-blue-mask {        
+           background-image: url(/images/apple-texture5-small.jpg);
+        }
+
+        .aimengxiang {        
+            font-size: 16px;
+        }
+
+        .main-section {
+            height: 700px;
+        }
+
+        .manifesto-content {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .fluid-content-padded {
+            padding-left: 6.25vw;
+            padding-right: 6.25vw;
+        }
+
+        .apb-section-content,
+        .fluid-content {
+            width:calc(100vw - 12.5vw);
+        }
+
+        .mobile-margin {
+            margin-left:6.25vw;
+            margin-right:6.25vw;
+        }
+
+        .pad-section-container-mobile{
+            padding-left:30px;
+            padding-right: 30px;
+        }
+
+        .pure-text-columns {
+            margin-top: 60px;
+            margin-bottom: 60px;            
+        }
+
+        .pure-text-col .typography-headline{
+            max-width: 90%; 
+        }
+
+        .pure-text-col,
+        .pure-text-col + .pure-text-col{
+            padding:0;
+        }
+        
+
+    }
+
+    .to-full {
+        padding-left:0;
+        padding-right: 0;
+    }

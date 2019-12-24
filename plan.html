@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>爱梦想方案: 打造另一个苹果，另一个微软，另一个亚马逊，另一个谷歌，另一个万亿美元市值的IT公司。</title>
+    <meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#ff4612">
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="/css/ap.css" type="text/css" />
+    <link rel="stylesheet" href="/css/g.css" type="text/css" />
+    <script src="/js/jquery.min.js"></script>
+    <script type='text/javascript' src='/js/scrollMagic.js'></script>
+
+    <style>
+        html {
+            font-size: 19px;
+        }
+
+        body {            
+            color:#757575;
+            font-family: Roboto,Arial,Helvetica,sans-serif;
+        }
+
+        /*.sss-img-wrapper figure:first-child {
+            opacity: 1;
+            transition: opacity 0.8s .3s;
+        }*/
+
+
+
+        .sss-img-wrapper .shade {                 
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .scroll-slide-show {
+            height: initial; 
+            //margin-top: 3.75rem;  
+        }
+
+        /*.sss-content {
+            height: initial;
+            margin-bottom: 40vh;
+        }*/
+        
+        .sss-content:last-child {
+            margin-bottom:25vh;
+        }
+
+        .sss-content-empty {
+            height: 70vh;
+        }
+
+        .sss-content-container {
+            padding-top: 0px;
+            padding-bottom: 1px;
+        }
+
+        .sss-border-frame {
+            position: absolute;
+        }
+
+        .free-to-dos {
+            padding:80px 0;
+            background: white;
+        }
+
+        .free-to-do-image {
+            height: 40vh;
+        }
+
+        .owl-dots {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .owl-dot {
+            display: inline-block;
+            
+        }
+
+        .owl-dot span {
+            display: block;
+            margin: 0 7px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: rgba(136,136,136,0.4);
+        }
+
+        .owl-dot.active span {
+            background-color: #888;
+        }
+
+        .free-to-do-text p{
+            font-size:.87em;
+        }
+        .free-to-do-text {
+            margin: 16px 20px 0 20px;
+            opacity: 0;
+            transition: opacity .5s .5s;
+        }
+
+        .owl-item.active .free-to-do-text{
+            opacity: 1;
+        }
+
+        .free-to-do-text p+p{
+            margin-top:12px;
+        }
+
+        .story-content {
+            z-index: 2;
+        }
+
+        .statement>* {
+            width:80%;
+        }
+
+        #globalization {
+            height: 200vh;
+        }
+
+        #story-cover-page {
+            background: black;
+        }
+
+
+        #chapter-one-quote{
+            background-image: url("images/bill-gates.jpg");
+        }
+        #chapter-two-quote{
+            background-image: url("images/brin-and-page.jpg");
+        }
+        #chapter-three-quote{
+            background-image: url("images/jeff-bezos.jpg");
+        }
+        #chapter-four-quote {
+            background-image: url("images/steve-jobs.jpg");
+            background-position-y: 10%;
+        }
+
+        #foreword .cover-img {
+            background-image: url("images/plan-01.jpg");
+        }
+
+        .foreword-thumbnail {
+            background-image: url("images/plan-01-thumb.jpg");
+        }
+
+        .chapter-one-thumbnail {
+            background-image: url("images/plan-02-thumb.jpg")
+        }
+
+        .chapter-two-thumbnail {
+            background-image: url("images/plan-07-thumb.jpg")
+        }
+
+        .chapter-three-thumbnail {
+            background-image: url("images/plan-17-thumb.jpg")
+        }
+
+        .chapter-four-thumbnail {
+            background-image: url("images/plan-20-thumb.jpg")
+        }
+
+        #chapter-one .chapter-module .cover-img {
+            background-image: url("images/plan-02.jpg")
+        }
+        #chapter-two .chapter-module .cover-img {
+            background-image: url("images/plan-07.jpg")
+        }
+
+        #chapter-three .chapter-module .cover-img {
+            background-image: url("images/plan-17.jpg")
+        }
+        #chapter-four .chapter-module .cover-img {
+            background-image: url("images/plan-20.jpg")
+        }
+
+        .partner-details-slide1{
+            background-image: url("images/plan-03.jpg");
+            background-position-y:bottom;
+        } 
+
+        .partner-details-slide2{
+            background-image: url("images/plan-04.jpg");
+            background-position-y:bottom;
+        } 
+
+        .partner-details-slide3{
+            background-image: url("images/plan-05.jpg")
+        } 
+
+        .partner-details-slide4{
+            background-image: url("images/plan-06.jpg")
+        } 
+
+        .no-building{
+            background-image: url("images/plan-08.jpg")
+        } 
+
+        .work-at-home{
+            background-image: url("images/plan-09.jpg")
+        }
+
+        .sleeping-late {
+            background-image: url("images/plan-10.jpg");
+        }
+
+        .playing-tennis {
+            background-image: url("images/plan-11.jpg");
+        }
+
+        .care-for-baby {
+            background-image: url("images/plan-12.jpg");
+        }
+
+        .work-at-starbucks {
+            background-image: url("images/plan-13.jpg");
+        }
+
+        .country-cottage {
+            background-image: url("images/plan-14.jpg");
+        }   
+        
+        .be-anywhere {
+            background-image: url("images/plan-15.jpg");
+        }     
+
+        .how-wonderful {
+            background-image: url("images/plan-16.jpg");
+        }  
+
+        .zero-expense1 {
+            background-image: url("images/plan-18.jpg");
+        }
+
+        .zero-expense2 {
+            background-image: url("images/plan-19.jpg");
+        }
+
+        .brave-pioneer {
+            background-image: url("images/plan-21.jpg");
+        }
+
+
+        @media only screen and (min-width: 768px) {
+            html {
+                font-size: 16px;
+            }
+
+            /*.scroll-slide-show {
+                margin-top:5.625rem;
+            }*/
+        }
+
+        @media only screen and (max-width: 767px) {
+
+            #chapter-one-quote{
+                background-image: url("images/bill-gates-small.jpg");
+            }
+            #chapter-two-quote{
+                background-image: url("images/brin-and-page-small.jpg");
+            }
+            #chapter-three-quote{
+                background-image: url("images/jeff-bezos-small.jpg");
+            }
+            #chapter-four-quote {
+                background-image: url("images/steve-jobs-small.jpg");
+                background-position-y: 10%;
+            }
+
+            #foreword .cover-img {
+                background-image: url("images/plan-01-small.jpg");
+            }
+
+            #chapter-one .chapter-module .cover-img {
+                background-image: url("images/plan-02-small.jpg")
+            }
+            #chapter-two .chapter-module .cover-img {
+                background-image: url("images/plan-07-small.jpg")
+            }
+
+            #chapter-three .chapter-module .cover-img {
+                background-image: url("images/plan-17-small.jpg")
+            }
+            #chapter-four .chapter-module .cover-img {
+                background-image: url("images/plan-20-small.jpg")
+            }
+
+            .partner-details-slide1{
+                background-image: url("images/plan-03-small.jpg");
+            } 
+
+            .partner-details-slide2{
+                background-image: url("images/plan-04-small.jpg");
+            } 
+
+            .partner-details-slide3{
+                background-image: url("images/plan-05-small.jpg")
+            } 
+
+            .partner-details-slide4{
+                background-image: url("images/plan-06-small.jpg")
+            } 
+
+            .no-building{
+                background-image: url("images/plan-08-small.jpg")
+            } 
+
+            .work-at-home{
+                background-image: url("images/plan-09-small.jpg")
+            }
+
+            .sleeping-late {
+                background-image: url("images/plan-10-small.jpg");
+            }
+
+            .playing-tennis {
+                background-image: url("images/plan-11-small.jpg");
+            }
+
+            .care-for-baby {
+                background-image: url("images/plan-12-small.jpg");
+            }
+
+            .work-at-starbucks {
+                background-image: url("images/plan-13-small.jpg");
+            }
+
+            .country-cottage {
+                background-image: url("images/plan-14-small.jpg");
+            }   
+            
+            .be-anywhere {
+                background-image: url("images/plan-15-small.jpg");
+            }     
+
+            .how-wonderful {
+                background-image: url("images/plan-16-small.jpg");
+            }  
+
+            .zero-expense1 {
+                background-image: url("images/plan-18-small.jpg");
+            }
+
+            .zero-expense2 {
+                background-image: url("images/plan-19-small.jpg");
+            }
+
+            .brave-pioneer {
+                background-image: url("images/plan-21-small.jpg");
+            }
+        }
+
+
+        .nowrap{white-space: nowrap;}
+
+
+
+    </style>
+</head>
+<!-- class="hidden-no-trans scroll-magic" data-scroll-magic="{
+                            'enterClass':'show-with-delay',  
+                            'magicSpaceTop':0}"-->
+<body>
+    <header class="gheader fixed-nav open">
+        <div class="header-inner vertical-align">
+            <a class="aomoxo-logo">
+                <img height="37" src="images/aomoxo-icon.svg" />
+            </a>
+            <button class="nav-toggle right-toggle-button">
+                <svg class="nav-toggle-button css-1fe7a5q" viewBox="0 0 24 18">
+                    <rect x="1" y="2" width="24" height="2"></rect>
+                    <rect x="1" y="9" width="24" height="2"></rect>
+                    <rect x="1" y="16" width="24" height="2"></rect>
+                </svg>
+            </button>
+            <a class="close-nav close-nav-button right-toggle-button">
+                <div class="close-button-inner close-button-inner1">&nbsp;</div>
+                <div class="close-button-inner close-button-inner2">&nbsp;</div>
+            </a>
+            <div class="new-nav delay-hidden">
+                <ul>
+                    <li>
+                        <a href="/">首页</a>
+                    </li>
+                    <li>
+                        <a href="/about.html">关于</a>
+                    </li>
+                    <li class="selected">
+                        <a href="/plan.html">爱梦想方案</a>
+                    </li>
+                    <li>
+                        <a href="/team.html">团队</a>
+                    </li>
+                    <li>
+                        <a href="/summit.html">爱梦想峰会</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="chapter-menu-module">
+        <div class="bar-wrapper">
+            <div class="inner-wrapper">
+                <div class="chapter-selector">
+                    <p id="chapter-selector-0" class="display-none scroll-magic" data-scroll-magic="{
+                                        'enterClass':'display',  
+                                        'magicSpaceTop':0,
+                                        'magicSpaceHeight':1, 
+                                        'scrollUnit':'em',
+                                        'manual':'foreword',
+                                        'relativeElement':'foreword'}">
+                        爱梦想方案:
+                        <span>前言</span>
+                    </p>
+                    <p id="chapter-selector-1" class="display-none scroll-magic" data-scroll-magic="{
+                                        'enterClass':'display',  
+                                        'magicSpaceTop':0,
+                                        'magicSpaceHeight':1, 
+                                        'scrollUnit':'em',
+                                        'withViewHeight':'100',
+                                        'relative':true,
+                                        'relativeElement':'chapter-one'}">
+                        爱梦想方案:
+                        <span>第一章</span>
+                    </p>
+                    <p id="chapter-selector-2" class="display-none scroll-magic" data-scroll-magic="{
+                                        'enterClass':'display',  
+                                        'magicSpaceTop':0,
+                                        'magicSpaceHeight':1, 
+                                        'scrollUnit':'em',
+                                        'withViewHeight':'100',
+                                        'relative':true,
+                                        'relativeElement':'chapter-two'}">
+                        爱梦想方案:
+                        <span>第二章</span>
+                    </p>
+                    <p id="chapter-selector-3" class="display-none scroll-magic" data-scroll-magic="{
+                                        'enterClass':'display',  
+                                        'magicSpaceTop':0,
+                                        'magicSpaceHeight':1, 
+                                        'scrollUnit':'em',
+                                        'withViewHeight':'100',
+                                        'relative':true,
+                                        'relativeElement':'chapter-three'}">
+                        爱梦想方案:
+                        <span>第三章</span>
+                    </p>
+                    <p id="chapter-selector-4" class="display-none scroll-magic" data-scroll-magic="{
+                                        'enterClass':'display',  
+                                        'magicSpaceTop':0,
+                                        'magicSpaceHeight':1, 
+                                        'scrollUnit':'em',
+                                        'withViewHeight':'100',
+                                        'relative':true,
+                                        'relativeElement':'chapter-four'}">
+                        爱梦想方案:
+                        <span>第四章</span>
+                    </p>
+                    <svg alt="简介" class="icon" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+                        <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" fill="#4285f4"></path>
+                    </svg>
+                </div>
+            </div>
+            <div id="chapter-progress" class="blue-progress-bar"></div>
+        </div>
+        <div class="thumb-menu-wrapper">
+            <ul class="bare-ul thumb-menu">
+                <li data-index="foreword">
+                    <figure class="foreword-thumbnail cover cover-img">
+                    </figure>
+                    <div class="title">
+                        前言: 新想法为非凡梦想<span class="nowrap">所生。</span>
+                    </div>
+                </li>
+                <li data-index="chapter-one">
+                    <figure class="chapter-one-thumbnail cover cover-img">
+                    </figure>
+                    <div class="title">
+                        第一章：合伙人持股计划
+                    </div>
+                </li>
+                <li data-index="chapter-two">
+                    <figure class="chapter-two-thumbnail cover cover-img">
+                    </figure>
+                    <div class="title">
+                        第二章：互联网公司架构
+                    </div>
+                </li>
+                <li data-index="chapter-three">
+                    <figure class="chapter-three-thumbnail cover cover-img">
+                    </figure>
+                    <div class="title">
+                        第三章：“零成本”创业模式
+                    </div>
+                </li>
+                <li data-index="chapter-four">
+                    <figure class="chapter-four-thumbnail cover cover-img">
+                    </figure>
+                    <div class="title">
+                        第四章：我们的使命
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="grey-p scroll-magic" data-scroll-magic="{
+                        'transfrom':0,
+                        'transformTo':100,
+                        'cssAttr':'width',
+                        'attrUnit':'vw',
+                        'magicSpaceTop':0,
+                        'magicSpaceHeight':1, 
+                        'scrollUnit':'em',
+                        'magicElement':'chapter-progress',
+                        'manual':'chapter-progress'}">
+        <div class="fangan-wrapper">
+
+            <div id="foreword">
+                <div id="foreword-cover" class="full-page-intro story-grid-row">
+                        <div class="cover cover-img zoom-pic" ></div>
+                        <div class="chapter-heading story-grid-small story-grid">
+                            <h3 class="heading">
+                                爱梦想方案
+                            </h3>
+                            <p>
+                                打造另一个苹果，另一个微软，另一个亚马逊，另一个谷歌，另一个万亿美元市值的<span class="nowrap">IT公司。</span>
+                            </p>
+                            <div class="down-arrow center-content">
+                                <div class="circle"></div>
+                                <svg alt="" class="icon" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+                                    <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                </svg>
+                            </div>     
+                        </div>               
+                </div>
+                <div class="chapter-content story-grid">
+                    <div class="story-content story-grid-small">
+
+                        <div class="share-the-plan center-content">
+                            <p>请分享给您的人才朋友</p>
+                            <ul class="bare-ul social-ul">
+                                <li>
+                                    <a class="copy-article-link">
+                                        <svg class="small-icon" t="1571896665118" version="1.1" p-id="4629"  viewBox="0 0 1024 1024"><path xmlns="http://www.w3.org/2000/svg" d="M62.296463 576.23471l64.234709-64.23471 85.676565 85.646279-42.853425 42.853425a121.140424 121.140424 0 0 0 0 171.292559l42.853425 42.853425a121.140424 121.140424 0 0 0 171.292559 0l214.145983-214.145984a121.140424 121.140424 0 0 0 0-171.322844l-42.823139-42.823139a120.080445 120.080445 0 0 0-24.440081-18.413345l88.705075-88.67479 85.64628 85.64628a211.995741 211.995741 0 0 1 0 299.822548l-256.969124 256.969123a211.995741 211.995741 0 0 1-299.822548 0l-85.646279-85.646279a211.995741 211.995741 0 0 1 0-299.822548z" fill="#E13455" p-id="6164"/><path xmlns="http://www.w3.org/2000/svg" d="M961.703537 447.76529l-64.234709 64.23471-85.676565-85.646279 42.853425-42.853425a121.140424 121.140424 0 0 0 0-171.292559l-42.853425-42.853425a121.140424 121.140424 0 0 0-171.292559 0l-214.145983 214.145984a121.140424 121.140424 0 0 0 0 171.322844l42.823139 42.823139a120.080445 120.080445 0 0 0 24.440081 18.413345L404.911866 704.734414l-85.64628-85.64628a211.995741 211.995741 0 0 1 0-299.822548l256.969124-256.969123a211.995741 211.995741 0 0 1 299.822548 0l85.646279 85.646279a211.995741 211.995741 0 0 1 0 299.822548z" fill="#F3ADBA" p-id="6165"/></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="sina-share-article">
+                                        <svg t="1571896665118" version="1.1" p-id="4629"  viewBox="0 0 1024 1024"><path xmlns="http://www.w3.org/2000/svg" d="M851.4 590.193c-22.196-66.233-90.385-90.422-105.912-91.863-15.523-1.442-29.593-9.94-19.295-27.505 10.302-17.566 29.304-68.684-7.248-104.681-36.564-36.14-116.512-22.462-173.094 0.866-56.434 23.327-53.39 7.055-51.65-8.925 1.89-16.848 32.355-111.02-60.791-122.395C311.395 220.86 154.85 370.754 99.572 457.15 16 587.607 29.208 675.873 29.208 675.873h0.58c10.009 121.819 190.787 218.869 412.328 218.869 190.5 0 350.961-71.853 398.402-169.478 0 0 0.143-0.433 0.575-1.156 4.938-10.506 8.71-21.168 11.035-32.254 6.668-26.205 11.755-64.215-0.728-101.66z m-436.7 251.27c-157.71 0-285.674-84.095-285.674-187.768 0-103.671 127.82-187.76 285.674-187.76 157.705 0 285.673 84.089 285.673 187.76 0 103.815-127.968 187.768-285.673 187.768z" fill="#E71F19" p-id="2189"/><path xmlns="http://www.w3.org/2000/svg" d="M803.096 425.327c2.896 1.298 5.945 1.869 8.994 1.869 8.993 0 17.7-5.328 21.323-14.112 5.95-13.964 8.993-28.793 8.993-44.205 0-62.488-51.208-113.321-114.181-113.321-15.379 0-30.32 3.022-44.396 8.926-11.755 4.896-17.263 18.432-12.335 30.24 4.933 11.662 18.572 17.134 30.465 12.238 8.419-3.46 17.268-5.33 26.41-5.33 37.431 0 67.752 30.241 67.752 67.247 0 9.068-1.735 17.857-5.369 26.202a22.832 22.832 0 0 0 12.335 30.236l0.01 0.01z" fill="#F5AA15" p-id="2190"/><path xmlns="http://www.w3.org/2000/svg" d="M726.922 114.157c-25.969 0-51.65 3.744-76.315 10.942-18.423 5.472-28.868 24.622-23.5 42.91 5.509 18.29 24.804 28.657 43.237 23.329a201.888 201.888 0 0 1 56.578-8.064c109.253 0 198.189 88.271 198.189 196.696 0 19.436-2.905 38.729-8.419 57.16-5.508 18.289 4.79 37.588 23.212 43.053 3.342 1.014 6.817 1.442 10.159 1.442 14.943 0 28.725-9.648 33.37-24.48 7.547-24.906 11.462-50.826 11.462-77.175-0.143-146.588-120.278-265.813-267.973-265.813z" fill="#F5AA15" p-id="2191"/><path xmlns="http://www.w3.org/2000/svg" d="M388.294 534.47c-84.151 0-152.34 59.178-152.34 132.334 0 73.141 68.189 132.328 152.34 132.328 84.148 0 152.337-59.182 152.337-132.328 0-73.15-68.19-132.334-152.337-132.334zM338.53 752.763c-29.454 0-53.39-23.755-53.39-52.987 0-29.228 23.941-52.989 53.39-52.989 29.453 0 53.39 23.76 53.39 52.989 0 29.227-23.937 52.987-53.39 52.987z m99.82-95.465c-6.382 11.086-19.296 15.696-28.726 10.219-9.43-5.323-11.75-18.717-5.37-29.803 6.386-11.09 19.297-15.7 28.725-10.224 9.43 5.472 11.755 18.864 5.37 29.808z" fill="#040000" p-id="2192"/></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="weixin-share-article">
+                                        <svg t="1571896665118" version="1.1" p-id="4629"  viewBox="0 0 1024 1024"><path xmlns="http://www.w3.org/2000/svg" d="M1024 619.52c0-143.36-138.24-256-307.2-256s-307.2 112.64-307.2 256 138.24 256 307.2 256c30.72 0 61.44-5.12 92.16-10.24l97.28 51.2-25.6-76.8c87.04-51.2 143.36-128 143.36-220.16z m-414.72-40.96c-30.72 0-51.2-20.48-51.2-51.2s20.48-51.2 51.2-51.2 51.2 20.48 51.2 51.2c0 25.6-25.6 51.2-51.2 51.2z m209.92 0c-30.72 0-51.2-20.48-51.2-51.2s20.48-51.2 51.2-51.2 51.2 20.48 51.2 51.2c0 25.6-25.6 51.2-51.2 51.2z" fill="#4CBF00" p-id="2943"/><path xmlns="http://www.w3.org/2000/svg" d="M358.4 609.28c0-158.72 153.6-286.72 348.16-286.72h15.36c-40.96-133.12-179.2-235.52-353.28-235.52-204.8 0-368.64 138.24-368.64 307.2 0 107.52 66.56 204.8 168.96 256l-30.72 92.16L256 686.08c35.84 10.24 71.68 15.36 112.64 15.36h10.24c-15.36-30.72-20.48-61.44-20.48-92.16z m138.24-414.72c35.84 0 66.56 30.72 66.56 66.56s-30.72 66.56-66.56 66.56C460.8 322.56 430.08 291.84 430.08 256S460.8 194.56 496.64 194.56zM245.76 322.56c-35.84 0-61.44-30.72-61.44-66.56s30.72-66.56 66.56-66.56 61.44 30.72 61.44 66.56-30.72 66.56-66.56 66.56z" fill="#4CBF00" p-id="2944"/></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="qq-share-article">
+                                        <svg t="1573655733199" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1642"><path d="M955.728 428.224c8.385-8.785 3.76-23.536-8.073-25.753l-276.832-51.854c-4.838-0.906-9.02-3.987-11.38-8.383L525.873 93.229c-2.798-5.23-8.342-7.85-13.875-7.896-5.532 0.045-11.075 2.667-13.873 7.896L364.558 342.234c-2.36 4.396-6.543 7.477-11.381 8.383L76.345 402.471c-11.833 2.217-16.458 16.968-8.073 25.753L269.64 639.086c3.564 3.733 5.205 8.952 4.433 14.1l-46.015 282.032c-1.819 12.126 10.394 21.407 21.298 16.182L505 827.827a16.098 16.098 0 0 1 7-1.58 16.1 16.1 0 0 1 7.003 1.58L774.644 951.4c10.904 5.225 23.117-4.056 21.298-16.182l-46.88-287.298 206.666-219.696z" fill="#FFCD00" p-id="1643"></path><path d="M559.42 493.63c-4.517-3.772-110.987-40.332-273.968-16-3.16 0.47-5.913-0.394-8.04-1.992-0.717 4 3.587 7.152 8.988 7.527 115.064 8.021 179.42 54.987 199.492 71.501 40.78-28.923 71.882-50.606 73.063-51.527 3.668-2.856 3.695-6.811 0.465-9.51m135.65-29.972c-41.744 35.168-160.159 116.897-201.52 148.468-4.864 3.711-3.177 9.424 2.098 11.43 17.045 6.488 36.23 11.95 56.421 16.445l159.784-152.228c12.544-13.184 5.238-29.152-10.422-32.661-1.025 3.011-3.259 5.933-6.36 8.546M817.187 640l-0.101 0.045c-70.456 29.709-241.54 79.623-451.762 72.33-25.386-0.88-50.63-3.715-64.786-6.325-2.067-0.38-3.878-1.012-5.476-1.846-10.567 12.224 2.073 21.462 47.148 30.58 131.886 26.676 286.047 38.934 415.304 30.665l-8.884-54.324c43.727-31.431 64.996-58.546 67.524-62.57 2.899-4.616 1.033-8.555 1.033-8.555" fill="#F1A308" p-id="1644"></path><path d="M818.863 646.995c-53.31 5.137-215.894 3.686-311.826-33.167-5.107-1.962-6.834-7.566-2.129-11.194 40.025-30.84 154.62-110.68 195.014-145.035 7.872-6.696 9.95-15.437 0.375-22.542-18.36-13.623-83.168-36.203-158.198-36.816-107.373-0.88-212.858 29.498-259.133 54.09-10.983 5.837-4.392 21.221 6.83 19.495 164.223-25.24 271.495 12.756 276.045 16.67 3.255 2.798 3.074 6.906-0.5 9.715-3.036 2.389-199.263 143.36-258.23 193.11-9.286 7.834-6.845 24.246 8.35 27.018 14.152 2.582 39.406 5.412 64.784 6.284 210.173 7.214 381.314-42.24 451.755-71.63 0 0-2.148-7.057-13.137-5.998" fill="#FFFFFF" p-id="1645"></path></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="facebook-share-article">
+                                        <svg t="1571896665118" version="1.1" p-id="4629"  viewBox="0 0 1024 1024"><path xmlns="http://www.w3.org/2000/svg" d="M933.8 195.213c0-58.296-47.259-105.554-105.554-105.554h-633.12c-58.296 0-105.554 47.258-105.554 105.554v633.12c0 58.295 47.258 105.554 105.554 105.554h633.12c58.295 0 105.554-47.259 105.554-105.554v-633.12zM776.21 300.46H669.787v105.4H776.21v105.401H669.787v317.225h-105.4V511.261H458.985v-105.4h105.4V267.9c0-35.433 39.029-72.84 78.785-72.84H776.21v105.4z" fill="#425F9B" p-id="3791"/></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="twitter-share-article">
+                                        <svg t="1571896665118" version="1.1" p-id="4629"  viewBox="0 0 1024 1024"><path d="M962.267429 233.179429q-38.253714 56.027429-92.598857 95.451429 0.585143 7.972571 0.585143 23.990857 0 74.313143-21.723429 148.260571t-65.974857 141.970286-105.398857 120.32-147.456 83.456-184.539429 31.158857q-154.843429 0-283.428571-82.870857 19.968 2.267429 44.544 2.267429 128.585143 0 229.156571-78.848-59.977143-1.170286-107.446857-36.864t-65.170286-91.136q18.870857 2.852571 34.889143 2.852571 24.576 0 48.566857-6.290286-64-13.165714-105.984-63.707429t-41.984-117.394286l0-2.267429q38.838857 21.723429 83.456 23.405714-37.741714-25.161143-59.977143-65.682286t-22.308571-87.990857q0-50.322286 25.161143-93.110857 69.12 85.138286 168.301714 136.265143t212.260571 56.832q-4.534857-21.723429-4.534857-42.276571 0-76.580571 53.979429-130.56t130.56-53.979429q80.018286 0 134.875429 58.294857 62.317714-11.995429 117.174857-44.544-21.138286 65.682286-81.115429 101.741714 53.174857-5.705143 106.276571-28.598857z" fill="#00ACED" p-id="4630"></path></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <p>拥有苹果、微软、亚马逊、谷歌任何一个千分之一股份，会怎样？</p>
+                        <p>万亿美元市值，千分之一股份价值十亿美元，超过六十亿元人民币；万分之一股份价值一亿美元，超过六亿元人民币；十万分之一股份价值一千万美元，超过六千万元人民币。</p>
+                        <p>如果用万亿美元市值激励人才又会怎样？</p>
+                        <p>万亿美元市值，可以造就1000名身价十亿美元的亿万富豪，10000名身价一亿美元的亿万富豪，100000名身价一千万美元、超过六千万元人民币的“准”亿万富豪。</p>
+    
+                        <blockquote>
+                            <p>既然万亿美元市值威力如此之大，我们何不动用未来“万亿美元市值的财富”去激励人才，去打造另一个万亿美元市值公司呢？</p>
+                        </blockquote>
+                        <p>现在就请您大开脑洞，在我们的指引下来一次疯狂的历险吧！</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="chapter-one">
+
+                <div id="chapter-one-cover" 
+                    class="chapter-module scroll-magic non-visible" 
+                    data-scroll-magic="{
+                    'enterClass':'visible',  
+                    'magicSpaceTop':-300, 
+                    'magicSpaceHeight':3000,
+                    'relative':true}">
+                    <div class="chapter-fixed story-grid-row">
+                        <div class="cover-img zoom-pic scroll-magic" data-scroll-magic="{
+                                'enterClass':'zoom-in',
+                                'magicSpaceTop':50,
+                                'magicSpaceHeight':150, 
+                                'scrollUnit':'vh',
+                                'relativeElement':'chapter-one-cover',
+                                'relative':true}"></div>
+                        <div class="chapter-heading story-grid-small story-grid hidown scroll-magic" data-scroll-magic="{
+                                'enterClass':'show-up',
+                                'magicSpaceTop':80, 
+                                'scrollUnit':'vh',
+                                'relativeElement':'chapter-one-cover',
+                                'relative':true}">
+                            <p class="eyebrow">
+                                第一章
+                            </p>
+                            <h3 class="heading">
+                                合伙人持股<span class="nowrap">计划</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chapter-content">
+                    <div class="story-grid">
+                        <div class="story-content story-grid-small">
+                            <h3>用史上最多的股份，造就史上最多的亿万<span class="nowrap">富豪。</span></h3>
+                            
+                            <p>在通向万亿美元市值目标的起点，我们所做的第一件事情就是把最多的股份给予人才，让团队中每位成员都可以拥有这一宝贵资源，赋予每位人才分享万亿美元市值的权利，让人才既是万亿美元市值最大的推动者，也是万亿美元市值最大的<span class="nowrap">受益者。</span></p>
+                            <!--http://infographic.statista.com/normal/chartoftheday_3019_Percentage_of_shares_by_sharing_channel_n.jpg-->
+                            <div class="story-image">
+                                <figure class="cover-img" style="background-image:url(images/shares.jpg);background-size:contain;"></figure>
+                            </div>
+
+                            <p>以上是爱梦想公司的股权结构图，聪明的人才们，您能猜出其中的<span class="nowrap">奥妙吗？</span></p>
+
+                            <blockquote>
+                                <p>创始人持股3%，为“打造万亿美元市值”让出绝大多数<span class="nowrap">股份。</span></p>
+                            </blockquote>
+                            <p>3%，是我们作为创始人为自己留下的份额，或许算得上史上最低的创始人股份，但我们真正看重的是，这个不起眼的数字将让我们能够动用97%的股份，做一件 BIG THING。</p>
+
+                            <div class="story-image">
+                                <figure class="cover-img" style="background-image:url(images/shares-60.jpg);background-size: contain;"></figure>
+                            </div>
+
+                            <blockquote>
+                                <p>用60%股份，造就12200名亿万<span class="nowrap">富豪。</span></p>
+                            </blockquote>
+                            <p>
+                                我们首先要用总股份的60%，在全球招募12200名一流人才，组建一支完全由合伙人组成的创业团队，每位合伙人的股份份额，都足以确保万亿美元市值下人人成为亿万<span class="nowrap">富豪。</span></p>
+                            
+                            <p>OK！现在就让我们一睹庐山真面目，看看12200名合伙人每人的股份究竟能达到多少，看看万亿美元市值下每人的亿万身价究竟能达到<span class="nowrap">多少？</span></p>
+                        </div>
+                    </div>
+
+                    <div id="partner-details" 
+                        class="scroll-slide-show scroll-magic">
+
+                        <div class="sss-wrapper">
+
+                            <div class="sss-img-wrapper sticky-thing">
+                                <div>
+                                    <figure class="partner-details-slide1 cover-img show-low-priority scroll-magic" data-scroll-magic="{
+                                        'enterClass':'hidden', 
+                                        'magicSpaceTop':50, 
+                                        'scrollUnit':'vh',
+                                        'relative':true,
+                                        'relativeElement':'partners-slide-text4'}"></figure>
+                                    <figure class="partner-details-slide2 cover-img hidden scroll-magic" data-scroll-magic="{
+                                        'enterClass':'will-change-opacity show-with-delay', 
+                                        'magicSpaceTop':50,
+                                        'magicSpaceHeight':150,
+                                        'scrollUnit':'vh',
+                                        'relative':true,
+                                        'relativeElement':'partners-slide-text4'}"></figure>
+                                    <figure class="partner-details-slide3 cover-img hidden scroll-magic"data-scroll-magic="{
+                                        'enterClass':'will-change-opacity show-with-delay', 
+                                        'magicSpaceTop':50,
+                                        'magicSpaceHeight':150,
+                                        'scrollUnit':'vh',
+                                        'relative':true,
+                                        'relativeElement':'partners-slide-text7'}"></figure>
+                                    <figure class="partner-details-slide4 cover-img hidden scroll-magic"data-scroll-magic="{
+                                        'enterClass':'will-change-opacity show-with-delay', 
+                                        'magicSpaceTop':50,
+                                        'scrollUnit':'vh',
+                                        'relative':true,
+                                        'relativeElement':'partners-slide-text10'}"></figure>
+                                    
+                                </div>
+
+                                <div class="shade">
+                                </div>
+                                <div id="sss-border-frame" class="sss-border-frame sss-wide-border-frame scroll-magic" data-scroll-magic="{
+                                    'enterClass':'flourished',
+                                    'magicSpaceTop':107, 
+                                    'scrollUnit':'vh',
+                                    'relative':true,
+                                    'relativeElement':'partner-details'}"></div>
+                                    
+                            </div>
+
+                            <div class="sss-content-container sticky-after scroll-magic">
+                                
+                                <div class="sss-content sss-content-empty">
+                                </div>
+
+                                <div id="partners-slide-text1" class="sss-content vertical-align hidden scroll-magic" data-scroll-magic="{
+                                    'enterClass':'will-change-opacity show',
+                                    'magicSpaceTop':0,
+                                    'magicSpaceHeight':1, 
+                                    'scrollUnit':'em',
+                                    'relative':true,
+                                    'manual':'first-sss-content'}">
+                                    <div class="pressed-down-max scroll-magic" data-scroll-magic="{
+                                        'enterClass':'spring-up',
+                                        'magicSpaceTop':50, 
+                                        'scrollUnit':'vh',
+                                        'relative':true,'relativeElement':'partners-slide-text1'}">
+                                        <p>200名
+                                            <h3 class="title">“十亿美元级”合伙人</h3>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div id="partners-slide-text2" class="sss-content vertical-align hidden scroll-magic" data-scroll-magic="{
+                                    'enterClass':'will-change-opacity show',
+                                    'magicSpaceTop':0,
+                                    'magicSpaceHeight':1, 
+                                    'scrollUnit':'em',
+                                    'relative':true,
+                                    'manual':'sss-content'}">
+                                    <div class="pressed-down-max scroll-magic" data-scroll-magic="{
+                                        'enterClass':'spring-up',
+                                        'magicSpaceTop':30,
+                                        'scrollUnit':'vh',
+                                        'relative':true,'relativeElement':'partners-slide-text2'}">
+                                        <p>
+                                            每人股份千分之一，万亿美元市值，千分之一股份价值十亿美元，爱梦想创业团队将诞生200名身价十亿美元的亿万<span class="nowrap">富豪。</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div id="partners-slide-text3" class="sss-content vertical-align hidden scroll-magic" data-scroll-magic="{
+                                    'enterClass':'will-change-opacity show',
+                                    'magicSpaceTop':0,
+                                    'magicSpaceHeight':1, 
+                                    'scrollUnit':'em',
+                                    'relative':true,
+                                    'manual':'sss-content'}">
+                                    <div class="pressed-down-max scroll-magic" data-scroll-magic="{
+                                        'enterClass':'spring-up',
+                                        'magicSpaceTop':30,
+                                        'scrollUnit':'vh',
+                                        'relative':true,'relativeElement':'partners-slide-text3'}">
+                                        <p>
+                                            这是最早加入爱梦想的团队成员，是爱梦想万亿美元市值行动的先行者和领导力量，也是爱梦想合伙人团队中持股比例最高的合伙人，是爱梦想的顶级<span class="nowrap">合伙人。</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div id="partners-slide-text4" class="sss-content vertical-align hidden scroll-magic" data-scroll-magic="{
+                                    'enterClass':'will-change-opacity show',
+                                    'magicSpaceTop':0,
+                                    'magicSpaceHeight':1, 
+                                    'scrollUnit':'em',
+                                    'relative':true,
+                                    'manual':'sss-content'}">
+                                    <div class="pressed-down-max scroll-magic" data-scroll-magic="{
+                                        'enterClass':'spring-up',
+                                        'magicSpaceTop':30,
+                                        'scrollUnit':'vh',
+                                        'relative':true,'relativeElement':'partners-slide-text4'}">
+                                        <p>2000名
+                                            <h3 class="title">“亿元美元级”合伙人</h3>
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div id="partners-slide-text5" class="sss-content vertical-align hidden scroll-magic" data-scroll-magic="{
+                                    'enterClass':'will-change-opacity show',
+                                    'magicSpaceTop':0,
+                                    'magicSpaceHeight':1, 
+                                    'scrollUnit':'em',
+                                    'relative':true,
+                                    'manual':'sss-content'}">
+                                    <div class="pressed-down-max scroll-magic" data-scroll-magic="{
+                                        'enterClass':'spring-up',
+                                        'magicSpaceTop':30,
+                                        'scrollUnit':'vh',
+                                        'relative':true,'relativeElement':'partners-slide-text5'}">
+                                        <p>
+                                            每人股份万分之一，万亿美元市值，万分之一股份价值一亿美元，爱梦想创业团队还将诞生2000名身价一亿美元的亿万<span class="nowrap">富豪。</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div id="partners-slide-text6" class="sss-content vertical-align hidden scroll-magic" data-scroll-magic="{
+                                    'enterClass':'will-change-opacity show',
+                                    'magicSpaceTop':0,
+                                    'magicSpaceHeight':1, 
+                                    'scrollUnit':'em',
+                                    'relative':true,
+                                    'manual':'sss-content'}">
+                                    <div class="pressed-down-max scroll-magic" data-scroll-magic="{
+                                        'enterClass':'spring-up',
+                                        'magicSpaceTop':30,
+                                        'scrollUnit':'vh',
+                                        'relative':true,'relativeElement':'partners-slide-text6'}">
+                                        
+                                        <p>
+                                            这是继200名顶级合伙人之后加入的团队成员，是爱梦想万亿美元市值行动的中坚力量，成百上千个改变世界的伟大项目，将首先在他们的推动下产生。2000名“亿元美元级”合伙人，将随着项目发展的需要而逐步<span class="nowrap">到位。</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div id="partners-slide-text7" class="sss-content vertical-align hidden scroll-magic" data-scroll-magic="{
+                                    'enterClass':'will-change-opacity show',
+                                    'magicSpaceTop':0,
+                                    'magicSpaceHeight':1, 
+                                    'scrollUnit':'em',
+                                    'relative':true,
+                                    'manual':'sss-content'}">
+                                    <div class="pressed-down-max scroll-magic" data-scroll-magic="{
+                                        'enterClass':'spring-up',
+                                        'magicSpaceTop':30,
+                                        'scrollUnit':'vh',
+                                        'relative':true,'relativeElement':'partners-slide-text7'}">
+                                        <p >10000名
+                                            <h3 class="title">“亿元人民币级”<span class="nowrap">合伙人</span></h3>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div id="partners-slide-text8" class="sss-content vertical-align hidden scroll-magic" data-scroll-magic="{
+                                    'enterClass':'will-change-opacity show',
+                                    'magicSpaceTop':0,
+                                    'magicSpaceHeight':1, 
+                                    'scrollUnit':'em',
+                                    'relative':true,
+                                    'manual':'sss-content'}">
+                                    <div class="pressed-down-max scroll-magic" data-scroll-magic="{
+                                        'enterClass':'spring-up',
+                                        'magicSpaceTop':30,
+                                        'scrollUnit':'vh',
+                                        'relative':true,'relativeElement':'partners-slide-text8'}">
+                                        <p>
+                                            每人股份五万分之一，万亿美元市值，五万分之一股份价值两千万美元，超过一亿两千万元人民币，爱梦想创业团队还将诞生10000名身价超过一亿两千万元人民币的亿万<span class="nowrap">富豪。</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div id="partners-slide-text9" class="sss-content vertical-align hidden scroll-magic" data-scroll-magic="{
+                                    'enterClass':'will-change-opacity show',
+                                    'magicSpaceTop':0,
+                                    'magicSpaceHeight':1, 
+                                    'scrollUnit':'em',
+                                    'relative':true,
+                                    'manual':'sss-content'}">
+                                    <div class="pressed-down-max scroll-magic" data-scroll-magic="{
+                                        'enterClass':'spring-up',
+                                        'magicSpaceTop':30,
+                                        'scrollUnit':'vh',
+                                        'relative':true,'relativeElement':'partners-slide-text9'}">
+                                        <p>
+                                            当2000名“亿元美元级”合伙人完全到位，有能力承接这支巨大的队伍时，万名“亿元人民币级”合伙人的招募活动将隆重启动，他们的到来，将让爱梦想成为一家真正意义上的万人公司，意味着爱梦想已经为实现万亿美元市值的远大目标备好了数量最多、素质最高、动力最强的人才<span class="nowrap">力量。</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div id="partners-slide-text10" class="sss-content vertical-align hidden scroll-magic" data-scroll-magic="{
+                                    'enterClass':'will-change-opacity show',
+                                    'magicSpaceTop':0,
+                                    'magicSpaceHeight':1, 
+                                    'scrollUnit':'em',
+                                    'relative':true,
+                                    'manual':'sss-content'}">
+                                    <div class="pressed-down-max scroll-magic" data-scroll-magic="{
+                                        'enterClass':'spring-up',
+                                        'magicSpaceTop':30,
+                                        'scrollUnit':'vh',
+                                        'relative':true,'relativeElement':'partners-slide-text10'}">
+                                        <p>万亿美元市值，爱梦想合伙人团队将向世界<span class="nowrap">贡献：</span></p>
+                                        <p class="small-content center-content">
+                                            200名身价十亿美元，<br>2000名身价一亿美元，<br>10000名身价两千万美元、超过一亿两千万人民币的亿万<span class="nowrap">富豪。</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div id="partners-slide-text11" class="sss-content vertical-align hidden scroll-magic" data-scroll-magic="{
+                                    'enterClass':'will-change-opacity show',
+                                    'magicSpaceTop':50,
+                                    'scrollUnit':'vh',
+                                    'relative':true}">
+                                    <div class="pressed-down-max scroll-magic" data-scroll-magic="{
+                                        'enterClass':'spring-up',
+                                        'magicSpaceTop':30,
+                                        'scrollUnit':'vh',
+                                        'relative':true,'relativeElement':'partners-slide-text11'}">
+                                        <p>
+                                            这是从未有过的事情，爱梦想正在创造新的<span class="nowrap">历史。</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>                           
+                            
+                        </div>
+                    </div>
+
+                    <div class="story-grid">
+                        <div class="story-content story-grid-small">
+
+                            <p>这不是一支普普通通的创业团队，每名团队成员也不是普普通通的员工，他们都是爱梦想的合伙人，是公司未来的股东，公司真正的主人，持有公司股份，分享公司所创造的一切<span class="nowrap">财富。</span>
+                            </p>
+                            <p>这是一群“野心家”。他们加入爱梦想，不是为了挣得工资薪水，而是为了亿万富豪梦想，为了让爱梦想能够成为像苹果谷歌一样的万亿美元市值<span class="nowrap">公司。</span>
+                            </p>
+                            <p>爱梦想万亿美元市值的目标，就是要靠这样一群动力十足的“野心家”来<span class="nowrap">实现。</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="chapter-one-quote" class="chapter-quote cover-img vertical-align story-grid">
+                        <div class="shade"></div>
+                        <div class="center-content story-grid-small">
+                            <blockquote>
+                                <p>有非凡的志向，才会有非凡的<span class="nowrap">成就！</span></p>
+                                <div class="quote-from">微软公司创始人，<span class="nowrap">比尔·盖茨</span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="story-grid">
+                        <div class="story-content story-grid-small">
+                            <blockquote>
+                                <p>2%“总裁特别激励”，助力爱梦想领导团队<span class="nowrap">建设。</span></p>
+                            </blockquote>
+                            <p>
+                                除董事长、ceo由创始人担任外，我们还会从200名顶级合伙人中，选拔出十名副总裁，组建爱梦想的领导<span class="nowrap">团队。</span></p>
+                            <p>为此，我们创设了2%的“总裁特别激励”股份，为十名副总裁在千分之一的基础上每人再追加千分之二的股份。万亿美元市值，每位副总裁的身价将达到30亿<span class="nowrap">美元。</span></p>
+
+                            <div class="story-image">
+                                <figure class="cover-img" style="background-image:url(images/shares-35.jpg);background-size: contain;"></figure>
+                            </div>
+
+                            <blockquote>
+                                <p>如能把融资股份控制在10%之内，爱梦想还有望再为人才激励增加25%的股份，爱梦想创业团队还有望再为世界贡献25000名“准”亿万<span class="nowrap">富豪。</span></p>
+                            </blockquote>
+
+                            <p>出于谨慎性考虑，我们预留出35%的股份用于应对未来的融资<span class="nowrap">需要。</span></p>
+                            <p>但是，爱梦想是一家“零成本”的公司，资金需求较小，未来融资实际用到的股份可能只是其中的一小部分（详见第三章）。爱梦想打造万亿美元市值的目标，靠得是人才，我们希望把更多股份留给人才。在不影响公司正常融资需要的前提下，我们将努力提高融资效率，尽可能减少融资股份占比，为人才激励争取更多<span class="nowrap">股份。</span></p>
+                            <p>如果能把融资所用股份控制在10%之内，节省出25%的股份用于人才激励，以每人十万分之一计算，爱梦想合伙人团队还可再添25000名精英人才，万亿美元市值，爱梦想团队还将可能再诞生25000名身价超过六千万元人民币的“准”亿万<span class="nowrap">富豪。</span></p>
+                            <p>果真如此，爱梦想将能够做到把87%的股份用于人才激励，将可以为实现万亿美元市值的远大目标聚集37200名一流<span class="nowrap">人才！</span></p>
+                            <p>万亿美元市值，爱梦想创业团队，不仅可以造就12200名亿万富豪，还可以再造就25000名身价一千万美元，超过六千万元人民币的“准”亿万富豪，这将是多大的<span class="nowrap">奇迹！</span></p>
+                            <p>让我们一起努力，一起<span class="nowrap">期待！</span></p>
+                        </div>  
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="chapter-two">
+
+                <div id="chapter-two-cover" 
+                    class="chapter-module scroll-magic non-visible" 
+                    data-scroll-magic="{
+                    'enterClass':'visible',  
+                    'magicSpaceTop':-800, 
+                    'magicSpaceHeight':4000,
+                    'relative':true}">
+                    <div class="chapter-fixed story-grid-row">
+                        <div class="cover-img zoom-pic scroll-magic" data-scroll-magic="{
+                                'enterClass':'zoom-in',
+                                'magicSpaceTop':50,
+                                'magicSpaceHeight':150, 
+                                'scrollUnit':'vh',
+                                'relativeElement':'chapter-two-cover',
+                                'relative':true}"></div>
+                        <div class="chapter-heading story-grid-small story-grid hidown scroll-magic" data-scroll-magic="{
+                                'enterClass':'show-up',
+                                'magicSpaceTop':80,
+                                'scrollUnit':'vh',
+                                'relativeElement':'chapter-two-cover',
+                                'relative':true}">
+                            <p class="eyebrow">
+                                第二章
+                            </p>
+                            <h3 class="heading">
+                                完全基于互联网的<span class="nowrap">全球公司架构</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chapter-content">
+
+                    <div class="story-grid">
+                        <div class="story-content story-grid-small">
+                            <h3>让全球人才加入爱梦想变得简单<span class="nowrap">容易。</span>
+                            </h3>
+                            <p>爱梦想将是一家完全建立在互联网上的全球化公司，没有任何实体化办公场所和办公设备，所有爱梦想人都将不再像其他公司的员工一样每天到公司上班，而是可以在世界上任何地方通过互联网在网上<span class="nowrap">“上班”。</span></p>
+
+                            <div class="story-image">
+                                <figure class="no-building cover-img"></figure>
+                            </div>
+
+
+                            <blockquote>
+                                <p>遍布全球的“爱梦想大厦”非砖瓦堆砌<span class="nowrap">而成。</span></p>
+                            </blockquote>
+
+                            <p>除了象征性的注册地址，在我们生活的星球上，没有哪栋建筑能够代表爱梦想。爱梦想甚至没有一间属于公司的办公室，没有各式各样的办公设备，也看不到为员工准备的一个个高度集成的工作台；这里没有用于接待客户的宽阔厅堂，没有精美的服务设施，也没有花重金打造的豪华员工休息区，更没有可以用于提供免费午餐的现代化烹饪<span class="nowrap">设施……。</span></p>
+                            
+                            <p>“爱梦想大厦”是用互联网络这个现代社会最为时尚的建筑材料和最先进的技术建设起来的全球化建筑，无论身处何地都可以以最快的速度<span class="nowrap">步入。</span></p>
+                        </div>
+                    </div>
+
+                    <div id="chapter-two-quote" class="chapter-quote cover-img vertical-align story-grid">
+                        <div class="shade"></div>
+                        <div class="center-content story-grid-small">
+                            <blockquote>
+                                <p>我们所创建的不是一家普普通通的公司，永远也<span class="nowrap">不要是！</span></p>
+                                <div class="quote-from">谷歌公司创始人，谢尔盖·布林和<span class="nowrap">拉里·佩奇</span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="story-grid">
+                        <div class="story-content story-grid-small">
+                            <blockquote>
+                                <p> 无论身在中国大陆，还是遥远的美国硅谷，无论属于韩国日本印度，还是欧盟二十八国，成为爱梦想的一员，您都不需要离开家门半步，不需要离开已经熟悉的生活环境和所爱的人们。</p>
+                            </blockquote>
+                            <p>能否通过互联网实现团队成员全球化？我们多年前的一个想法，如今给出了<span class="nowrap">答案。</span></p>
+                            <p>现在已是互联网时代，我们已完全具备通过互联网分享全球人才资源的一切条件，爱梦想要率先成为这样一家公司。只要有互联网，只要符合爱梦想一流人才准则，任何人都可以通过互联网成为爱梦想合伙人中的一员，都可以与我们一起创业，一起追求万亿美元市值的梦想，一起成为亿万富豪，一起改变<span class="nowrap">世界。</span>
+                            </p>
+
+                            <div class="story-image">
+                                <figure class="work-at-home cover-img"></figure>
+                            </div>
+
+
+                            <p>这也是我们实现全球化发展战略的一部分。基于人才全球化，爱梦想不仅可以拥有中国这样一个全球最大的市场，还可以快速布局印度、越南等新兴市场，同样也可以在美国欧洲等发达国家发展业务，爱梦想将以最低的成本，最快的速度实现<span class="nowrap">全球化。</span></p>
+                            <p>爱梦想是一家崇尚理想的公司，不管别人怎样做，只要是我们理想中的事情，都会不留余力大胆的去<span class="nowrap">追求。</span></p>
+
+                            <blockquote>
+                                <p>加入爱梦想，您将可以自由选择在世界任何喜欢的地方工作和<span class="nowrap">生活。</span></p>
+                            </blockquote>
+                            <p>加入爱梦想，意味着您不再需要早早起床，睡眼朦胧下急匆匆地赶乘早班地铁，意味着无论加班多晚都不用担心夜间回家路上的隐患，意味着您不必把自己的住房购置在某个距离公司最近的区域。其实，您住在哪个城市，或者哪个国家，只要有互联网，在哪里都是一样的快捷……。最最重要的是，从加入爱梦想的那一天<span class="nowrap">开始：</span></p>
+                            
+                            <p>You are free！</p>
+                            
+                            <p>当其他公司的员工依旧要起早贪黑在拥挤的城市道路上急匆匆赶路的时候，您的生活却完全是另外一番<span class="nowrap">景象。</span></p>
+                        </div>
+                    </div>
+
+                    <div id="free-lifestyle" 
+                        class="scroll-slide-show scroll-magic">
+
+                        <div class="sss-wrapper">
+
+                            <div class="sss-img-wrapper sticky-thing">
+                                <div>
+                                    <figure class="sleeping-late cover-img show-low-priority scroll-magic" data-scroll-magic="{
+                                        'enterClass':'hidden', 
+                                        'magicSpaceTop':50, 
+                                        'scrollUnit':'vh',
+                                        'relative':true,
+                                        'relativeElement':'free-lifestyle-slide-text2'}"></figure>
+                                    <figure class="playing-tennis cover-img hidden scroll-magic" data-scroll-magic="{
+                                        'enterClass':'will-change-opacity show-with-delay', 
+                                        'magicSpaceTop':50,
+                                        'magicSpaceHeight':50,
+                                        'scrollUnit':'vh',
+                                        'relative':true,
+                                        'relativeElement':'free-lifestyle-slide-text2'}"></figure>
+                                    <figure class="care-for-baby cover-img hidden scroll-magic"data-scroll-magic="{
+                                        'enterClass':'will-change-opacity show-with-delay', 
+                                        'magicSpaceTop':50,
+                                        'magicSpaceHeight':50,
+                                        'scrollUnit':'vh',
+                                        'relative':true,
+                                        'relativeElement':'free-lifestyle-slide-text3'}"></figure>
+                                    <figure class="work-at-starbucks cover-img hidden scroll-magic"data-scroll-magic="{
+                                        'enterClass':'will-change-opacity show-with-delay', 
+                                        'magicSpaceTop':50,
+                                        'magicSpaceHeight':50,
+                                        'scrollUnit':'vh',
+                                        'relative':true,
+                                        'relativeElement':'free-lifestyle-slide-text4'}"></figure>
+                                    <figure class="country-cottage cover-img hidden scroll-magic"data-scroll-magic="{
+                                        'enterClass':'will-change-opacity show-with-delay', 
+                                        'magicSpaceTop':50,
+                                        'magicSpaceHeight':50,
+                                        'scrollUnit':'vh',
+                                        'relative':true,
+                                        'relativeElement':'free-lifestyle-slide-text5'}"></figure>
+                                    <figure class="be-anywhere cover-img hidden scroll-magic"data-scroll-magic="{
+                                        'enterClass':'will-change-opacity show-with-delay', 
+                                        'magicSpaceTop':50,
+                                        'magicSpaceHeight':50,
+                                        'scrollUnit':'vh',
+                                        'relative':true,
+                                        'relativeElement':'free-lifestyle-slide-text6'}"></figure>
+                                    <figure class="how-wonderful cover-img hidden scroll-magic"data-scroll-magic="{
+                                        'enterClass':'will-change-opacity show-with-delay', 
+                                        'magicSpaceTop':50,
+                                        'scrollUnit':'vh',
+                                        'relative':true,
+                                        'relativeElement':'free-lifestyle-slide-text7'}"></figure>
+                                </div>
+
+                                <div class="shade">
+                                </div>
+                                <div class="sss-border-frame sss-wide-border-frame scroll-magic" data-scroll-magic="{
+                                    'enterClass':'flourished',
+                                    'magicSpaceTop':107, 
+                                    'scrollUnit':'vh',
+                                    'relative':true,
+                                    'relativeElement':'free-lifestyle'}"></div>
+                            </div>
+
+                            <div class="sss-content-container sticky-after scroll-magic">
+                                
+                                <div class="sss-content sss-content-empty">
+                                </div>
+
+                                <div id="free-lifestyle-slide-text1" class="sss-content vertical-align hidden scroll-magic" data-scroll-magic="{
+                                    'enterClass':'will-change-opacity show',
+                                    'magicSpaceTop':0,
+                                    'magicSpaceHeight':1, 
+                                    'scrollUnit':'em',
+                                    'relative':true,
+                                    'manual':'first-sss-content'}">
+                                    <div class="pressed-down-max scroll-magic" data-scroll-magic="{
+                                        'enterClass':'spring-up',
+                                        'magicSpaceTop':50, 
+                                        'scrollUnit':'vh',
+                                        'relative':true,'relativeElement':'free-lifestyle-slide-text1'}">
+                                        <p><strong>清晨美梦。</strong></p>
+                                        <p>由于昨晚为了解决一个工作上的问题而通宵达旦，此时您要大睡一场，让自己在美梦中放松<span class="nowrap">休息。</span></p>
+                                    </div>
+                                </div>
+
+                                <div id="free-lifestyle-slide-text2" class="sss-content vertical-align hidden scroll-magic" data-scroll-magic="{
+                                    'enterClass':'will-change-opacity show',
+                                    'magicSpaceTop':0,
+                                    'magicSpaceHeight':1, 
+                                    'scrollUnit':'em',
+                                    'relative':true,
+                                    'manual':'sss-content'}">
+                                    <div class="pressed-down-max scroll-magic" data-scroll-magic="{
+                                        'enterClass':'spring-up',
+                                        'magicSpaceTop':30,
+                                        'scrollUnit':'vh',
+                                        'relative':true,'relativeElement':'free-lifestyle-slide-text2'}">
+                                        <p><strong>网球场上潇洒的<span class="nowrap">身影。</span></strong></p>
+                                        <p>手握球拍正在某个网球场潇洒挥动，因为您已经习惯于每天工作之前让自己全身充满<span class="nowrap">活力。</span></p>
+                                    </div>
+                                </div>
+
+
+                                <div id="free-lifestyle-slide-text3" class="sss-content vertical-align hidden scroll-magic" data-scroll-magic="{
+                                    'enterClass':'will-change-opacity show',
+                                    'magicSpaceTop':0,
+                                    'magicSpaceHeight':1, 
+                                    'scrollUnit':'em',
+                                    'relative':true,
+                                    'manual':'sss-content'}">
+                                    <div class="pressed-down-max scroll-magic" data-scroll-magic="{
+                                        'enterClass':'spring-up',
+                                        'magicSpaceTop':30,
+                                        'scrollUnit':'vh',
+                                        'relative':true,'relativeElement':'free-lifestyle-slide-text3'}">
+                                        <p><strong>陪伴嗷嗷待哺的<span class="nowrap">幼儿。</span></strong></p>
+                                        <p>也许您是一个刚刚休完产假的年轻妈妈，由您在家陪伴，孩子的童年生活将是多么<span class="nowrap">幸福啊。</span></p>
+                                    </div>
+                                </div>
+
+
+                                <div id="free-lifestyle-slide-text4" class="sss-content vertical-align hidden scroll-magic" data-scroll-magic="{
+                                    'enterClass':'will-change-opacity show',
+                                    'magicSpaceTop':0,
+                                    'magicSpaceHeight':1, 
+                                    'scrollUnit':'em',
+                                    'relative':true,
+                                    'manual':'sss-content'}">
+                                    <div class="pressed-down-max scroll-magic" data-scroll-magic="{
+                                        'enterClass':'spring-up',
+                                        'magicSpaceTop':30,
+                                        'scrollUnit':'vh',
+                                        'relative':true,'relativeElement':'free-lifestyle-slide-text4'}">
+                                        <p><strong>星巴克的咖啡。</strong></p>
+                                        <p>或者您正在离家不远的星巴克的某个角落，一边品尝着美味的咖啡，一边在笔记本上快速的书写程序，因为一个新的环境格外让您<span class="nowrap">兴奋……。</span></p>
+                                    </div>
+                                </div>
+
+
+                                <div id="free-lifestyle-slide-text5" class="sss-content vertical-align hidden scroll-magic" data-scroll-magic="{
+                                    'enterClass':'will-change-opacity show',
+                                    'magicSpaceTop':0,
+                                    'magicSpaceHeight':1, 
+                                    'scrollUnit':'em',
+                                    'relative':true,
+                                    'manual':'sss-content'}">
+                                    <div class="pressed-down-max scroll-magic" data-scroll-magic="{
+                                        'enterClass':'spring-up',
+                                        'magicSpaceTop':30,
+                                        'scrollUnit':'vh',
+                                        'relative':true,'relativeElement':'free-lifestyle-slide-text5'}">
+                                        <p><strong>乡下美丽的小屋。</strong></p>
+                                        <p>向往乡下生活的您，现在是时候完全离开那喧嚣的都市生活，回到安静美丽的乡间，一面享受着田园生活，一面大胆的追求远大<span class="nowrap">梦想。</span></p>
+                                    </div>
+                                </div>
+
+                                <div id="free-lifestyle-slide-text6" class="sss-content vertical-align hidden scroll-magic" data-scroll-magic="{
+                                    'enterClass':'will-change-opacity show',
+                                    'magicSpaceTop':0,
+                                    'magicSpaceHeight':1, 
+                                    'scrollUnit':'em',
+                                    'relative':true,
+                                    'manual':'sss-content'}">
+                                    <div class="pressed-down-max scroll-magic" data-scroll-magic="{
+                                        'enterClass':'spring-up',
+                                        'magicSpaceTop':30,
+                                        'scrollUnit':'vh',
+                                        'relative':true,'relativeElement':'free-lifestyle-slide-text6'}">
+                                        <p><strong>从北京到东京，<br>从伦敦到纽约。</strong></p>
+                                        <p>您的生活就是如此的浪漫，您可以到自己真正喜欢的城市生活，不管是在哪个国家，而不会因此放弃自己喜欢的<span class="nowrap">工作。</span></p>
+                                    </div>
+                                </div>
+
+
+                                <div id="free-lifestyle-slide-text7" class="sss-content vertical-align hidden scroll-magic" data-scroll-magic="{
+                                    'enterClass':'will-change-opacity show',
+                                    'magicSpaceTop':50,
+                                    'scrollUnit':'vh',
+                                    'relative':true,}">
+                                    <div class="pressed-down-max scroll-magic" data-scroll-magic="{
+                                        'enterClass':'spring-up',
+                                        'magicSpaceTop':30,
+                                        'scrollUnit':'vh',
+                                        'relative':true,'relativeElement':'free-lifestyle-slide-text7'}">
+                                        <p>想想，这一切将是多么<span class="nowrap">美好!</span></p>
+                                    </div>
+                                </div>
+                                
+                            </div>                           
+                            
+                        </div>
+                    </div>
+
+                    <!--CAROUSEL div class="story-grid-medium">
+                        <div class="free-to-dos owl-carousel">
+                            <div class="free-to-do">
+                                <div class="free-to-do-image cover-img" style="background-image: url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1570336284755&amp;di=bcdebdd476417e3fc38b0fbd88aa2e52&amp;imgtype=0&amp;src=http%3A%2F%2Fdingyue.nosdn.127.net%2Ferwc%3DHHDg2DPt7nA7fn2xKsZ8LuZAYyVkhEG1Vq9MRDuQ1531726266666.jpg)"></div>
+                                <div class="free-to-do-text">
+                                    <p><thick>清晨美梦</thick></p>
+                                    <p>由于昨晚为了解决一个工作上的问题而通宵达旦，此时您要大睡一场，让自己在美梦中放松休息。</p>
+                                </div>
+                            </div>
+                            <div class="free-to-do">
+                                <div class="free-to-do-image cover-img" style="background-image: url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1570931038&amp;di=ce46531649f2d6ad25f15e6b2ae6b700&amp;imgtype=jpg&amp;er=1&amp;src=http%3A%2F%2Fpic.pingguolv.com%2Fuploads%2Fallimg%2F181107%2F77-1Q10G51235.jpg)"></div>
+                                <div class="free-to-do-text">
+                                    <p><thick>网球场上潇洒的身影。</thick></p>
+                                    <p>手握球拍正在某个网球场潇洒挥动，因为您已经习惯于每天工作之前让自己全身充满活力。</p>
+                                </div>
+                            </div>
+                            <div class="free-to-do">
+                                <div class="free-to-do-image cover-img" style="background-image: url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1570336338552&amp;di=19ca062b3594b78df226bd01ec1ccfe8&amp;imgtype=0&amp;src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F943572686c295cf2afb4d2e7cf829f17971808201cb95-HrIELi_fw658)"></div>
+                                <div class="free-to-do-text">
+                                    <p><thick>陪伴嗷嗷待哺的幼儿。</thick></p>
+                                    <p>也许您是一个刚刚休完产假的年轻妈妈，由您在家陪伴，孩子的童年生活将是多么幸福啊。</p>
+                                </div>
+                            </div>
+                            <div class="free-to-do">
+                                <div class="free-to-do-image cover-img" style="background-image: url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1570336391243&amp;di=ff0514c57c8a571fe57ef4840e068a53&amp;imgtype=0&amp;src=http%3A%2F%2Fimages2.china.com%2Ftech%2Fzh_cn%2Fhardware%2Fnotebook%2Fdaogou%2F10002553%2F20090720%2F2009072009354121244800.jpg)"></div>
+                                <div class="free-to-do-text">
+                                    <p><thick>星巴克的咖啡。</thick></p>
+                                    <p>或者您正在离家不远的星巴克的某个角落，一边品尝着美味的咖啡，一边在笔记本上快速的书写程序，因为一个新的环境格外让您兴奋……。</p>
+                                </div>
+                            </div>
+                            <div class="free-to-do">
+                                <div class="free-to-do-image cover-img" style="background-image: url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1570336432712&amp;di=cb2d3e46686b960a411c72e3cfc5843a&amp;imgtype=jpg&amp;src=http%3A%2F%2Fimg0.imgtn.bdimg.com%2Fit%2Fu%3D730203340%2C1691012646%26fm%3D214%26gp%3D0.jpg)"></div>
+                                <div class="free-to-do-text">
+                                    <p><thick>乡下美丽的小屋。</thick></p>
+                                    <p>向往乡下生活的您，现在是时候完全离开那喧嚣的都市生活，回到安静美丽的乡间，一面享受着田园生活，一面大胆的追求远大梦想。</p>
+                                </div>
+                            </div>
+                            <div class="free-to-do">
+                                <div class="free-to-do-image cover-img" style="background-image: url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1570336539809&amp;di=f4bef389befa58ccdbbf4224bc0b11fa&amp;imgtype=0&amp;src=http%3A%2F%2Fimg3.iqilu.com%2Fdata%2Fattachment%2Fforum%2F201402%2F26%2F054908rz3z1x9xauvm4nvv.jpg)"></div>
+                                <div class="free-to-do-text">
+                                    <p><thick>从北京到东京，从伦敦到纽约。</thick></p>
+                                    <p>您的生活就是如此的浪漫，您可以到自己真正喜欢的城市生活，不管是在哪个国家，而不会因此放弃自己喜欢的工作。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div-->
+
+                    <div class="story-grid">
+                        <div class="story-content story-grid-small">   
+                            <!--div class="top-border"></div-->
+                            <blockquote>
+                                <p>摒弃传统公司沉重的外壳 ，爱梦想将飞得更轻快，飞得更高<span class="nowrap">更远。</span></p>
+                            </blockquote>    
+
+                            <p><strong class="freedom-ribbon">轻量级，易发展。</strong>
+                                    
+                                    “爱梦想大厦”没有丝毫的重量，轻得可以飘起来。每当有新的合伙人加入，我们不需要准备任何办公环境，不需要采购任何设施设备，非常易于<span class="nowrap">扩展。</span></p>
+                            <p><strong class="freedom-ribbon">易管理，高效率。</strong>
+                                    
+                                    爱梦想不需要管理办公室里吃喝拉撒那么多杂事，而是把这些事情交给每位合伙人进行自我管理，因此我们可以把最宝贵的精力放在产品，创意，市场，客户等真正重要的<span class="nowrap">事情上。</span></p>
+                            <p><strong class="freedom-ribbon">低消耗，零成本。</strong>
+
+                                    即不需要花费巨资购置，也不需要日后像流水一般花钱去维护，这对于一家梦想远大的创业公司来说，何其<span class="nowrap">重要。</span></p>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="chapter-three">
+                <div id="chapter-three-cover"
+                    class="chapter-module scroll-magic non-visible" 
+                    data-scroll-magic="{
+                    'enterClass':'visible',  
+                    'magicSpaceTop':-800, 
+                    'magicSpaceHeight':4000,
+                    'relative':true}">
+                    <div class="chapter-fixed story-grid-row">
+                        <div class="cover-img zoom-pic scroll-magic" data-scroll-magic="{
+                                'enterClass':'zoom-in',
+                                'magicSpaceTop':50,
+                                'magicSpaceHeight':150, 
+                                'scrollUnit':'vh',
+                                'relativeElement':'chapter-three-cover',
+                                'relative':true}"></div>
+                        <div class="chapter-heading story-grid-small story-grid hidown scroll-magic" data-scroll-magic="{
+                                'enterClass':'show-up',
+                                'magicSpaceTop':80,
+                                'scrollUnit':'vh',
+                                'relativeElement':'chapter-three-cover',
+                                'relative':true}">
+                            <p class="eyebrow">
+                                第三章
+                            </p>
+                            <h3 class="heading">
+                                “零成本”创业模式和高效<span class="nowrap">融资计划</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="chapter-content">
+                    <div class="story-grid">
+                        <div class="story-content story-grid-small">
+                            <h3>让梦想的翅膀在惊涛骇浪中依然矫健<span class="nowrap">自如。</span>
+                            </h3>  
+                            <!--摒弃传统公司沉重的外壳 ，爱梦想将飞得更轻快，飞得更高更远-->
+                            <p>也许您不会相信，爱梦想，一家万人公司，将会在接近零成本的状态下发展<span class="nowrap">壮大。</span></p>
+                            <p>爱梦想的零成本创业模式，不是一个单独的设计，是爱梦想方案“合伙人持股计划”和“完全基于互联网的全球化公司架构”与生俱来的同胞兄弟，就像一枚硬币有正反两面，零成本创业模式，就是这些创意不可分割的另一面。</p>
+                            <p>所谓零成本创业模式，包括两个方面：零人工成本和零办公成本。</p>
+
+                            <blockquote>
+                                <p>爱梦想不需要向合伙人支付任何工资报酬，创业过程将不会产生任何人员<span class="nowrap">成本。</span></p>
+                            </blockquote>
+
+                            <p>爱梦想数万名团队成员将完全由合伙人组成，而非普通的员工。两者的根本不同是，爱梦想的每位合伙人都拥有数量可观的股份期权，是公司未来真正的股东，他们加入爱梦想，核心目标是为了实现非凡的人生价值，为了实现非凡的亿万富豪梦想，而非一名普通员工的薪水，公司不仅不需要向他们支付工资奖金之类的报酬，特定时期，他们甚至还要反过来为公司分忧解难，就像每一位创业者为自己的公司所做的<span class="nowrap">那样。</span></p>
+                            
+                            
+                            <div class="story-image">
+                                <figure class="zero-expense1 cover-img"></figure>
+                            </div>
+
+                            <blockquote>
+                                <p>完全建立在互联网上的“爱梦想大厦”不需要购买一砖一瓦一桌一椅就可高效<span class="nowrap">运转。</span></p>
+                            </blockquote>
+                            <p>把公司完全建立在互联网上，不仅让我们能够轻而易举实现全球化的构想，让人才们享受到自由的红利，也让一家万人公司变得轻盈无比，不需要自建或租用办公场地，不需要购置各种办公设施设备，所有爱梦想人，在各自的生活环境中工作，重用自己手中的个人电脑与家庭网络设备，这又让我们成功去掉了人员之外的开销，让公司的各项办公成本保持在<span class="nowrap">零水平。</span></p>
+
+                        </div>
+                    </div>
+
+                    <div id="chapter-three-quote" class="chapter-quote cover-img vertical-align story-grid">
+                        <div class="shade"></div>
+                        <div class="center-content story-grid-small">
+                            <blockquote>
+                                <p>节俭驱动创新，就像其他的限制驱动创新<span class="nowrap">一样。</span></p>
+                                <div class="quote-from">亚马逊公司创始人，<span class="nowrap">杰夫·贝佐斯</span></div>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="story-grid">
+                        <div class="story-content story-grid-small">
+                            <blockquote>
+                                <p>零成本下，爱梦想将以极快的速度建立起一支万人<span class="nowrap">团队。</span></p>
+                            </blockquote>
+                            <p>通常情况下，组建一支万人精英团队，是一个很高的门槛，没有雄厚的财力想都<span class="nowrap">别想。</span></p>
+                            <p>首先就是要有能力支付每一个团队成员的薪水。以人均三十万年薪算，一支万人团队，每年至少需要三十多亿元<span class="nowrap">人民币。</span></p>
+                            <p>同样重要的是，要想让这支庞大的队伍真正运转起来，只有薪水是不够的，还要有足够财力搭建起一个能够容纳上万人的办公场所，无论是一次性的建设费用，还是每年投入的维护费，各种办公费，管理费，这种规模的消耗，少则千万，多则<span class="nowrap">上亿。</span></p>
+                            <p>然而，当我们勇敢做出改变时，这些看似张牙舞爪的拦路虎瞬间逃跑的无影无踪，不要说12200人，就是再增加两倍的人员，爱梦想也能够既来之<span class="nowrap">则安之。</span></p>
+
+                            <blockquote>
+                                <p>零成本下，爱梦想的创业进程将不会遭遇资金链断裂的威胁，将可以经受得住任何风吹雨打，而依然<span class="nowrap">生机勃勃。</span></p>
+                            </blockquote>
+                            <p>爱梦想不存在发不了工资的情况，不存在无钱支付到期房租或水电费的情况，也不存在员工因为公司财务吃紧拖欠工资人心惶惶而提前离职的情况，也不存在由于资金断链导致公司各项业务停滞、创业中断的“危机”，爱梦想的零成本已经从机制上彻底铲除了产生资金链断裂等问题的“土壤”，创业历程有着极强的抗风浪<span class="nowrap">能力。</span></p>
+                            
+                            <div class="story-image">
+                                <figure class="zero-expense2 cover-img"></figure>
+                            </div>
+
+
+                            <blockquote>
+                                <p>不烧钱，不做融资投机分子，不为融资而融资，这是我们对待融资的<span class="nowrap">态度。</span></p>
+                            </blockquote>
+                            <p>爱梦想要实现万亿美元市值，如此远大的梦想，不能依靠拙劣的想法去实现。爱梦想要成为一家人才和技术密集型公司，而不是资本密集型公司，我们的发展依靠的是人才和创新，在我们的面前，总有很多的选择和路径，我们不会选择需要烧钱才能进行的项目，更不会喧宾夺主把找钱当作第一<span class="nowrap">要务。</span></p>
+                            <p>即使要“花钱”，我们也会一如既往，继续发扬爱梦想方案的创新精神，用创新解决“钱”的问题，让本来需要很多钱才可以开进的项目，瞬间变得轻盈无比，毫无<span class="nowrap">负荷。</span></p>
+                            <p>我们每节约一元钱，都可以让我们的事业减少对资本的依赖度，都可以节省出更多的股份用于进一步增强人才的力量，可以让公司更加健壮，能够经受住任何风浪的吹打和任何恶劣环境的<span class="nowrap">考验。</span></p>                      
+
+                            <blockquote>
+                                <p>进行融资创新，从F轮开始，或直接进入IPO进程，努力把用于融资的股份控制在10%<span class="nowrap">之内。</span></p>
+                            </blockquote>
+                            <p>尽管有35%的融资预留股份，但我们的目标是用尽可能少的股份解决融资问题。爱梦想的发展重在人才，我们将尽可能为人才争取更多股份。如能果真把融资控制在10%，将来，以每人十万分之一算，用25%的股份，爱梦想合伙人团队还可以再添两万五千名精英<span class="nowrap">人才。</span></p>
+                            <p>爱梦想的每一份股份都是宝贵无比，都应该发挥出重大作用，用于人才如此，用于融资亦<span class="nowrap">如此。</span></p>
+                            <p>200名顶级合伙人到位以后，我们将立即成立一个专门的机构，通过互联网与全球各地相关投资机构保持高效率协商沟通，向有价值的投资者游说爱梦想的融资<span class="nowrap">理念。</span></p>
+                            <p>我们希望与真正有魄力、有梦想的投资机构合作，希望与尊重爱梦想“人才驱动”理念的投资家共事，共同致力于把爱梦想打造成万亿美元市值的远大<span class="nowrap">目标。</span></p>
+                            <p>于此同时，爱梦想也将会大胆探索全新的融资方式，比如能否直接从F轮进行融资，比如直接进入IPO进程，只要能够让我们“以尽可能少的股份为爱梦想融入尽可能多的资金”的方案，都会积极<span class="nowrap">尝试。</span></p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+            <div id="chapter-four">
+
+                <div id="chapter-four-cover" 
+                    class="chapter-module scroll-magic non-visible" 
+                    data-scroll-magic="{
+                    'enterClass':'visible',  
+                    'magicSpaceTop':-800, 
+                    'magicSpaceHeight':4000,
+                    'relative':true}">
+                    <div class="chapter-fixed story-grid-row">
+                        <div class="cover-img zoom-pic scroll-magic" data-scroll-magic="{
+                                'enterClass':'zoom-in',
+                                'magicSpaceTop':50,
+                                'magicSpaceHeight':150, 
+                                'scrollUnit':'vh',
+                                'relativeElement':'chapter-four-cover',
+                                'relative':true}"></div>
+                        <div class="chapter-heading story-grid-small story-grid hidown scroll-magic" data-scroll-magic="{
+                                'enterClass':'show-up',
+                                'magicSpaceTop':80,
+                                'scrollUnit':'vh',
+                                'relativeElement':'chapter-four-cover',
+                                'relative':true}">
+                            <p class="eyebrow">
+                                第四章
+                            </p>
+                            <h3 class="heading">
+                                我们的使命是<span class="nowrap">改变世界</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="linear-grey">
+
+                <div class="chapter-content">
+                    <div class="story-grid">
+                        <div class="story-content story-grid-small">
+                            <h3>用成百上千个不可思议的创新项目<span class="nowrap">改变世界。</span>
+                            </h3>
+                            <p>作为爱梦想的创始人，我们很早就受到乔布斯、盖茨、马云、马化腾等梦想家的影响，以他们为师为友为榜样，早已把“改变世界”四个字植入到我们个人的人生梦想之中，并循着他们的足迹，踏上了改变世界的<span class="nowrap">创业之路。</span>
+                            </p>
+                            <p>创建爱梦想，是我们在改变世界方面所进行的一次最为大胆的尝试和探索。我们创造崭新的人才激励机制，<span class="freedom-ribbon">把万亿美元市值的绝大部分用于从全球范围聚集成千上万“一流人才”</span>，把改变世界的伟大行动与人才个人价值实现紧紧相连，把改变世界的使命交给一支最为杰出的人才群体来<span class="nowrap">完成。</span></p>
+                            <p>我们实现万亿美元市值的过程，本质上就是一次用成百上千个项目改变世界的探索之旅。改变世界不应该是一句空洞的口号，万亿美元市值也不可能凭空产生，爱梦想改变世界的理想和万亿美元市值都将最终付诸于一个个不可思议的创新项目，每一个项目的成功实施都将给世界带来巨大的<span class="nowrap">改变。</span></p>
+                            <p>这里，我们也要自豪地告诉每一位爱梦想<span class="nowrap">合伙人：</span>
+                            </p>
+                            <p>加入爱梦想，就是加入了一个改变世界的伟大进程，爱梦想的万亿美元市值，和每一位合伙人的亿万富豪梦想，将完全以成百上千个改变世界的项目为基石，当世界因为我们的创造而发生巨大改变之时，一定也是你我人生获得成功的<span class="nowrap">时候。</span></p>
+                            
+                            <div class="story-image">
+                                <figure class="brave-pioneer cover-img"></figure>
+                            </div>
+
+                            <blockquote>
+                                <p>像谷歌致力于人工智能，像spacex致力于移民火星，爱梦想要成为新领域最为勇敢的<span class="nowrap">拓荒者。</span></p>
+                            </blockquote>
+                            <p>全球最为杰出的开拓者，已经为我们做出了表率，告诉我们可以把火箭变成太空的公共汽车，可以以商业的方式实现人类移民火星的梦想；告诉我们只要把足够多的计算机聚到一起，就可以模拟出人类一样的智能，可以识别人脸，可以实现自动<span class="nowrap">驾驶。</span></p>
+                            <p>爱梦想一样不乏开拓者的勇敢基因，一样有太多的想法要实现，更重要的是，爱梦想拥有成千上万个不甘平庸、勇敢放弃安逸生活的非凡人才，这让我们不仅能够有信心，而且真正有实力去扮演拓荒者的角色，去做人们认为不可能的<span class="nowrap">事情。</span></p>
+
+                            <blockquote>
+                                <p>与全球最为杰出的IT公司为伍，为消费者提供另一个美好的<span class="nowrap">选择。</span></p>
+                            </blockquote>
+                            <p>爱梦想将会参与到互联网IT领域的方方面面，与实力强大的友商展开良性竞争，一起努力提升人类的<span class="nowrap">幸福感。</span></p>
+                            <p>爱梦想将会与腾讯公司为邻，推出可以与微信、QQ相媲美，能够广为人们喜爱的新型聊天软件，让人们从使用不同的产品中体验到不同的喜悦；爱梦想也将会与阿里巴巴比肩，推出敢于与淘宝天猫一争高低的网上购物环境，让购物者在互联网上也同样可以实现多样化的选择，就像在线下逛商场一样，能够刚走出一家商场的大门，立刻就可以踏入另一家一样wonderful的购物中心；爱梦想还会走出国门，在全球互联网IT舞台上扮演主角，与谷歌比技术，与亚马逊争市场，与facebook赛创意，让世界各地各种文化背景的消费者都可以享受另一个wonderful公司提供的another choice。</p>
+                          
+
+                            <blockquote>
+                                <p>为人们带来信心、信任和希望，成为全球最值得信赖的<span class="nowrap">品牌。</span></p>
+                            </blockquote>
+                            <p>任何事情都可以改变，任何难题都可以破解。爱梦想就是一个能够想办法解决问题的公司，一个能够让事情朝着美好的方向转变的先行者。爱梦想将深入人们生活的方方面面，感受人们的不满和抱怨，倾听人们的渴望和梦想，并把这些不满，抱怨，渴望，梦想转化成解决方案。爱梦想就是要让人们感受到，这不是一个普普通通的商家，而是一个梦想远大、以改变世界为使命的企业，是一个可以为人类带来美好，可以寄予厚望的，最值得信赖的宝贵<span class="nowrap">品牌。</span></p>
+                        </div>
+                    </div>
+
+                    <div id="chapter-four-quote" class="chapter-quote cover-img vertical-align story-grid">
+                        <div class="shade"></div>
+                        <div class="center-content story-grid-small">
+                            <blockquote>
+                                <p>只有那些相信自己能够改变世界的“疯子”，才是真正可以改变世界<span class="nowrap">的人。</span></p>
+                                <div class="quote-from">苹果公司创始人，<span class="nowrap">史蒂夫·乔布斯</span></div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="cap">
+                <a class="to-top">
+                    返回顶部
+                    <svg alt="" class="scroll-to-top-icon" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 20 20">
+                        <g stroke="none" stroke-width="1" fill="inherit">
+                          <circle fill="inherit" cx="9" cy="9" r="9"></circle>
+                          <polygon fill="#fff" points="3 9 4.0575 10.0575 8.25 5.8725 8.25 15 9.75 15 9.75 5.8725 13.935 10.065 15 9 9 3"></polygon>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="a-style join-us story-grid">
+            <div class="story-grid-small center-content">
+                <p>
+                    <strong>把握机会。</strong>
+                    想要人生不凡，就请快点联系我们。加入越早，持股就越高哦！
+                    <br>
+                    <a target="_blank" href="/team.html">了解合伙人席位最新变化 ></a>
+                </p>
+            </div>
+        </div>
+    </main>
+    <div class="footer">
+        <div class="inner">
+            <div class="social-inner">
+                <h5>联系我们：</h5>
+                <ul class="social-ul">
+                    <li>
+                        <a target="_blank"   href="mailto:aomoxo@163.com">
+                            <svg t="1572227949748" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7539" height="64">
+                                <path d="M149.6 171.8h691.9c47.2 0 85.9 37.7 86.5 83.9L495.7 493 63.5 256c0.4-46.4 38.8-84.2 86.1-84.2z m-86.1 175l-0.4 419.6c0 46.7 38.9 84.9 86.5 84.9h691.9c47.6 0 86.5-38.2 86.5-84.9V346.6L505.9 572.8c-6.5 3.5-14.3 3.5-20.7 0l-421.7-226z" p-id="7540" fill="#202124"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://weibo.com/hiamx">
+                            <svg t="1572227522257" class="icon" viewBox="0 0 1049 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3162" height="64">
+                                <path d="M2.778359 0zM763.377135 502.533926q-15.744776-3.155041-20.445007-9.433743t-1.57752-11.548515l3.15504-5.237482q1.04027-1.04027 2.114772-3.155041t4.197212-8.929773 4.733512-13.630005 2.61779-16.785046-0.5363-18.900768-6.311983-19.404738-13.126986-18.900768q-14.703556-14.703556-38.305506-18.900768t-47.202949-0.5363-44.582307 9.433744-34.612263 11.012215l-13.630005 6.311983q-10.507294 3.155041-17.323247 4.197213t-10.507294-0.5363-5.774733-3.155041-1.57752-7.352253 1.040269-9.970044 2.61779-13.126986 3.155041-14.167256q0-12.588784-1.57752-23.600048t-6.815003-24.641269-15.208476-22.023478-25.17947-13.630005-39.346727-3.155041-54.554251 12.588784q-36.727034 12.588784-74.494339 37.231004t-65.564564 51.397309-50.89429 51.935511-35.686765 40.924246l-11.548515 16.785046q-34.612263 45.120508-51.397309 90.240066t-15.744776 68.185207v22.023479q6.311984 50.357039 30.952302 90.240065t58.750513 64.524295 80.269071 41.964516 88.662545 25.179471 89.703765 11.012215q77.651281 6.311984 161.042112-12.052485t155.269281-63.484025T849.383855 693.395834q17.826266-36.727034 18.364468-69.258758t-11.012215-52.97578-29.912032-36.190734-34.612263-23.09703-28.83753-9.433743zM443.405781 828.816314q-113.303814 5.237482-192.500285-44.079288t-79.19457-124.852328q0-74.494338 78.691551-128.51229t193.036585-59.287764 193.036585 37.767304 78.69155 117.500075q0 75.53651-80.269071 135.864543t-191.459064 65.564565zM412.99073 538.186459q-30.415051 3.155041-54.554252 14.167256t-37.767304 25.17947-23.097029 30.415051-13.126986 31.993522-4.733512 28.837531-1.04027 20.445007l1.04027 8.393474v4.197212q0 3.155041 2.114771 12.588784t5.774733 17.323248 12.052484 17.323247 19.941989 15.744777q69.258758 33.571993 129.04859 20.445007t96.517817-60.327083q14.703556-17.826266 19.404737-44.079287t-2.114771-52.975781-23.600048-48.779518-49.820739-34.109245-76.073761-6.815002z m-37.769206 198.308299q-6.311984 1.04027-12.052484 0.5363t-10.507294-2.114771-9.433744-3.65806-7.855272-5.774733-5.774733-7.352253-4.197212-8.393474-1.577521-9.970043q0-11.548515 6.311984-22.559779t17.323248-18.900768 24.641268-8.929774q9.433743-1.04027 18.364468 0.5363t15.208477 5.237482 11.012215 8.393474 6.815002 11.012215 2.114771 13.630005q0 11.548515-6.815002 22.023479t-18.364468 17.826266-25.179471 8.393474z m89.166515-75.53651q-7.352253 5.237482-15.208476 4.733513t-11.012215-6.815003l-2.114771-4.197212q-1.04027-2.114771-1.04027-4.197213v-4.197212q0-3.155041 1.04027-5.237482l2.114771-4.197212q1.04027-2.114771 3.155041-3.155041l3.155041-4.197213q8.393474-6.311984 16.248746-5.237482t11.012214 8.393474q3.155041 4.197212 2.617791 9.433744t-3.155041 9.970043-6.815003 8.929774z m372.443165-219.289606q6.311984 0 11.548515-3.155041t8.393474-7.855272 4.197212-9.970043q1.04027-1.04027 1.04027-3.155041 12.588784-119.615797-83.929984-136.400843-28.334511-5.237482-52.471811-1.04027-7.352253 0-12.588784 3.65806t-8.929774 9.433743-3.658059 12.052485q0 10.507294 7.352253 17.826266t17.826266 7.352253q81.847542-18.900768 88.125294 52.471811 2.114771 17.826266-2.114771 33.571993 0 10.507294 7.352253 17.826267t17.826267 7.352253z m-17.826266-295.833104q-46.160778-10.507294-123.812059 4.197212-1.04027 0-2.114771 1.04027l-1.04027 2.114771-1.04027 1.040269q-11.548515 3.155041-18.900768 13.126986t-7.352253 21.518559q0 15.744776 10.507294 26.21974t25.179471 10.507294h3.155041q1.04027 0 4.733512-1.04027t7.855272-1.57752 8.929774-2.114771 8.393474-3.155041 14.167255-1.577521 25.715771 1.577521 33.571993 7.855272 36.727034 15.744776 36.727035 26.21974 31.993522 38.808525q27.294242 61.906505 10.507294 119.615797 0 1.04027-0.5363 2.114771t-1.57752 5.237482-2.114772 7.855272-2.114771 9.433744-1.04027 9.970043q0 9.433743 5.237482 15.744776t13.126987 8.929774 18.364468 2.61779q29.375732 0 34.612263-35.686765 12.588784-40.924247 14.167255-78.15525t-5.237482-65.564565-20.445007-52.97578-31.489552-41.964517-39.883026-31.489552-42.501768-22.559778-42.501767-13.630005z" fill="#202124" p-id="3163"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/images/weixin.jpg">
+                            <svg t="1572227415587" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2119" height="64">
+                                <path d="M686.976 332.8c10.88 0 21.632 0.832 32.256 2.048-28.992-135.104-173.44-235.52-338.304-235.52-184.32 0-335.296 125.632-335.296 285.184 0 92.096 50.24 167.68 134.208 226.368l-33.536 100.864 117.184-58.752c41.984 8.32 75.648 16.832 117.44 16.832 10.56 0 20.992-0.512 31.36-1.28a249.664 249.664 0 0 1-10.368-70.336c0-146.496 125.76-265.344 285.056-265.344zM506.688 241.92c25.28 0 41.984 16.64 41.984 41.856 0 25.152-16.704 41.984-41.984 41.984-25.088 0-50.368-16.832-50.368-41.984 0-25.216 25.28-41.856 50.368-41.856zM272 325.76c-25.088 0-50.432-16.832-50.432-41.984 0-25.216 25.344-41.856 50.432-41.856 25.152 0 41.856 16.64 41.856 41.856 0 25.152-16.64 41.984-41.856 41.984z" fill="#202124" p-id="2120"></path>
+                                <path d="M993.024 594.176c0-134.08-134.144-243.328-284.8-243.328-159.552 0-285.184 109.248-285.184 243.328 0 134.272 125.632 243.328 285.184 243.328 33.344 0 67.072-8.384 100.608-16.832l91.968 50.368-25.216-83.776c67.328-50.56 117.44-117.44 117.44-193.088zM615.68 552.32c-16.64 0-33.536-16.64-33.536-33.6 0-16.64 16.832-33.536 33.536-33.536 25.344 0 41.984 16.832 41.984 33.536 0 16.96-16.64 33.6-41.984 33.6z m184.448 0c-16.64 0-33.28-16.64-33.28-33.6 0-16.64 16.64-33.536 33.28-33.536 25.152 0 41.92 16.832 41.92 33.536 0 16.96-16.768 33.6-41.92 33.6z" fill="#202124" p-id="2121"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <svg t="1572227821874" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4758" height="64">
+                                <path d="M926 201.522C926 144.347 879.647 98 822.473 98h-620.95C144.347 98 98 144.347 98 201.522v620.95C98 879.649 144.348 926 201.522 926h620.95C879.648 926 926 879.648 926 822.473v-620.95z m-155 102.81H666.666v103.333H771v103.333H666.666V822H563.334V510.998H460V407.665h103.334V272.412c0-34.738 38.262-71.412 77.238-71.412H771v103.332z" fill="#202124" p-id="4759"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <svg t="1572227860980" class="small-icon" viewBox="0 0 1260 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5740">
+                                <path d="M1259.846921 121.148242c-46.524504 20.728739-96.273478 34.547899-148.325646 40.536201 53.434084-31.784067 94.430924-82.454319 113.777747-142.797982-50.209613 29.480874-105.486251 51.13089-164.447999 62.646857A257.584528 257.584528 0 0 0 872.449815 0.000276c-142.797982 0-258.418284 115.620302-258.418284 258.418284 0 20.268101 2.303193 40.075563 6.909579 58.961748C405.82286 306.32498 215.579097 203.602561 87.98219 47.446058c-22.110655 38.233008-35.008538 82.454319-35.008538 129.900099 0 89.824537 45.603227 168.593747 115.159663 215.118251-42.378756-1.381916-81.99368-12.897882-117.002217-32.244706v3.224471c0 125.293713 88.90326 229.398049 207.287393 253.351259-21.650017 5.988302-44.681949 9.212773-68.17452 9.212773-16.582991 0-32.705344-1.842555-48.827697-4.606387 32.705344 102.722419 128.518184 177.345881 241.374653 179.649074-88.442621 69.095798-199.917175 110.553277-321.06514 110.553277-20.728739 0-41.457479-1.381916-61.72558-3.685109 114.238386 73.241546 250.126788 116.08094 396.149241 116.08094 475.379089 0 735.179289-393.846048 735.179289-735.179289 0-11.055328-0.460639-22.571294-0.921277-33.626621 51.13089-36.851092 94.891562-82.454319 129.439461-134.045848z" fill="#202124" p-id="5741"></path>
+                            </svg>
+                    </li>
+                    <li>
+                        <a>
+                            <svg t="1572227915053" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6511" height="64">
+                                <path d="M512 85.333333c-115.882667 0-130.389333 0.512-175.914667 2.56-45.397333 2.090667-76.416 9.301333-103.552 19.84a209.109333 209.109333 0 0 0-75.605333 49.194667A209.152 209.152 0 0 0 107.733333 232.533333c-10.538667 27.136-17.749333 58.154667-19.84 103.552C85.802667 381.610667 85.333333 396.117333 85.333333 512s0.469333 130.389333 2.56 175.914667c2.090667 45.397333 9.301333 76.416 19.84 103.552a209.194667 209.194667 0 0 0 49.194667 75.605333 209.194667 209.194667 0 0 0 75.605333 49.194667c27.136 10.538667 58.154667 17.749333 103.552 19.84 45.525333 2.048 60.032 2.56 175.914667 2.56s130.389333-0.512 175.914667-2.56c45.397333-2.090667 76.416-9.301333 103.552-19.84a209.152 209.152 0 0 0 75.605333-49.194667 209.152 209.152 0 0 0 49.194667-75.605333c10.538667-27.136 17.749333-58.154667 19.84-103.552 2.048-45.525333 2.56-60.032 2.56-175.914667s-0.512-130.389333-2.56-175.914667c-2.090667-45.397333-9.301333-76.416-19.84-103.552a209.152 209.152 0 0 0-49.194667-75.605333 209.109333 209.109333 0 0 0-75.605333-49.194667c-27.136-10.538667-58.154667-17.749333-103.552-19.84C642.389333 85.845333 627.882667 85.333333 512 85.333333m0 76.885334c113.92 0 127.402667 0.426667 172.373333 2.474666 41.642667 1.92 64.213333 8.832 79.274667 14.677334 19.882667 7.765333 34.133333 17.024 49.066667 31.914666 14.933333 14.933333 24.149333 29.184 31.914666 49.066667 5.802667 15.061333 12.8 37.632 14.677334 79.232 2.048 45.013333 2.474667 58.453333 2.474666 172.416 0 113.92-0.426667 127.402667-2.474666 172.373333-1.92 41.642667-8.874667 64.213333-14.677334 79.274667a132.266667 132.266667 0 0 1-31.914666 49.066667c-14.933333 14.933333-29.184 24.149333-49.066667 31.914666-15.061333 5.802667-37.632 12.8-79.232 14.677334-44.970667 2.048-58.453333 2.474667-172.416 2.474666-113.92 0-127.445333-0.426667-172.373333-2.474666-41.642667-1.92-64.213333-8.874667-79.274667-14.677334a132.181333 132.181333 0 0 1-49.066667-31.914666 132.181333 132.181333 0 0 1-31.914666-49.066667c-5.845333-15.061333-12.8-37.632-14.677334-79.232-2.048-45.013333-2.474667-58.453333-2.474666-172.416 0-113.92 0.426667-127.402667 2.474666-172.373333 1.92-41.642667 8.832-64.213333 14.677334-79.274667 7.765333-19.882667 17.024-34.133333 31.914666-49.066667 14.933333-14.933333 29.184-24.149333 49.066667-31.914666 15.061333-5.845333 37.632-12.8 79.232-14.677334 45.013333-2.048 58.453333-2.474667 172.416-2.474666m0 491.989333a142.208 142.208 0 1 1 0-284.416 142.208 142.208 0 0 1 0 284.416m0-361.301333a219.093333 219.093333 0 1 0 0 438.186666 219.093333 219.093333 0 0 0 0-438.186666m278.954667-8.661334a51.2 51.2 0 1 1-102.4 0 51.2 51.2 0 0 1 102.4 0" fill="#202124" p-id="6512"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sitemap">
+                <ul class="footer-links">
+                    <li><a href="/">
+                            <h4>主页</h4>
+                        </a></li>
+                    <li><a href="/about.html">
+                            <h4>关于</h4>
+                        </a></li>
+                    <li><a href="/plan.html">
+                            <h4>爱梦想方案</h4>
+                        </a></li>
+                    <li><a href="/team.html">
+                            <h4>团队</h4>
+                        </a></li>
+                    <li><a href="/summit.html">
+                            <h4>爱梦想峰会</h4>
+                        </a></li>
+                </ul>
+                <div class="foot">
+                    <a class="aomoxo-logo">
+                        <img height="37" src="images/aomoxo-icon.svg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+    function scrollAnimation(currentY, targetY) {
+        // 获取当前位置方法
+        // const currentY = document.documentElement.scrollTop || document.body.scrollTop
+
+        // 计算需要移动的距离
+        let needScrollTop = targetY - currentY
+        let _currentY = currentY
+        setTimeout(() => {
+            // 一次调用滑动帧数，每次调用会不一样
+            const dist = Math.ceil(needScrollTop / 10)
+            _currentY += dist
+            window.scrollTo(_currentY, currentY)
+            // 如果移动幅度小于十个像素，直接移动，否则递归调用，实现动画效果
+            if (needScrollTop > 10 || needScrollTop < -10) {
+                scrollAnimation(_currentY, targetY)
+            } else {
+                window.scrollTo(_currentY, targetY)
+            }
+        }, 1)
+    }
+
+    $(".chapter-selector").click(function(e) {
+
+        if ($(".thumb-menu-wrapper").hasClass("open"))
+            $(".thumb-menu-wrapper").removeClass("open");
+        else
+            $(".thumb-menu-wrapper").addClass("open");
+    });
+
+    $(".thumb-menu li").click(function(e) {
+        var li = $("#" + e.currentTarget.dataset.index);
+        var top = li.offset().top;
+        scrollAnimation(document.documentElement.scrollTop || document.body.scrollTop, top + 1);
+        $(".thumb-menu-wrapper").removeClass("open");
+    });
+
+    $(".to-top").click(function(e) {
+        scrollAnimation(document.documentElement.scrollTop || document.body.scrollTop, 1);
+    });
+
+    const $input = $("#input");
+
+    var scrollMagic;
+
+    $(document).ready(function() {
+
+        scrollMagic = $.scrollMagic({
+            manuallySetElement: function(scroll, flag, element) {
+                if (flag == 'initial-buffer'){
+                    element.scrollEnd += 65;
+                    element.scrollStart += scroll.vhTOpx(100);
+                } else if(flag == 'first-sss-content'){
+                    element.scrollStart += scroll.vhTOpx(50);
+                    //element.scrollEnd+= scroll.vhTOpx(20);
+                } else if(flag == 'sss-content'|| flag == 'sss-bg'){
+                    element.scrollStart += scroll.vhTOpx(50);
+                    //element.scrollEnd+= scroll.vhTOpx(40);
+                } else if (flag == 'window-buffer-height')
+                    element.scrollStart += scroll.vhTOpx(100) + 65;
+                else if (flag == 'chapter-progress')
+                    element.scrollEnd -= scroll.vhTOpx(100);
+                else if (flag == 'minus-one-px')
+                    element.scrollStart -= 1;
+                else if (flag == 'foreword') {
+                    //element.scrollEnd -= scroll.vhTOpx(100);
+                }else if(flag == 'fade'){
+                    element.scrollStart += scroll.vhTOpx(50);
+                    element.scrollEnd+= scroll.vhTOpx(40);
+                } 
+
+            }
+        });
+
+
+        var previousWindowHeight = $(window).height();
+
+        var id,everesize = 0;
+        $(window).resize(function() {
+
+            clearTimeout(id);
+            id = setTimeout(doneResizing, 300);
+            everesize = $(document).height();
+            resizeCount = 0;
+
+            /*const currentHeight = $(window).height(),
+                scrollTop = $(window).scrollTop();
+
+            if (previousWindowHeight != currentHeight) {
+                //alert(scrollTop / previousWindowHeight);
+                window.scrollTo(0, scrollTop / previousWindowHeight * currentHeight);
+                previousWindowHeight = currentHeight;
+            }*/
+        });
+
+        var resizeCount;
+
+        function doneResizing() {
+            resizeCount++;
+            clearTimeout(id);
+            if(everesize != $(document).height()){
+                scrollMagic.resize();  
+                everesize = $(document).height();
+                id = setTimeout(doneResizing, 300);
+                //alert("windowresize  " + resizeCount + " done "+ $(document).height());
+            }
+        }
+
+
+
+    });
+
+
+    function fixSizeIntelligently() {
+
+        $(".intelli-view-size").each(function(index, el) {
+
+            console.log(el.dataset.intelliSize);
+
+            var height = $(window).height();
+
+            if (el.dataset.intelliSize) {
+                var intelli = eval('(' + el.dataset.intelliSize + ')');
+                for (var key in intelli) {
+                    var value = intelli[key];
+                    value = (height / 100) * value;
+                    console.log("intelli ", key, " value", value);
+                    $(el).css(key, value + "px");
+                }
+            } else el.style.height = height + "px";
+        });
+    }
+    </script>
+</body>
+
+
+<script type='text/javascript' src='/js/share-article.js'></script>
+<script type='text/javascript' src='/js/header.js'></script>
+
+</html>
