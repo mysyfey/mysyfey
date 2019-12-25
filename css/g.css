@@ -1313,13 +1313,13 @@
             font-size: 1.4rem;
         }
 
-        .recruiting:after {
+        .recruiting::after {
             content: "招募中";
             position: absolute;
             margin-top: -20px;
             margin-left: -25px;
-            font-size: 15px;
-            color: #d6320a;
+            font-size: 14px;
+            color: #ea4335;
             font-weight: 600;
         }
 
