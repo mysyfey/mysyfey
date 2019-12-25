@@ -65,11 +65,11 @@
     };
 
     $(".sina-share-article").click(function(){
-        shareModel.sinaWeiBo(document.title,"","https://www.apple.com/newsroom/images/environments/stores/Apple-Antara-store-opening-Deirdre-O-Brien-with-apple-team-members-092719_big.jpg.large.jpg");
+        shareModel.sinaWeiBo(document.title,"","http://www.aomoxo.com/images/aomoxo-icon.svg");
     });
 
     $(".qq-share-article").click(function(){
-        shareModel.shareQQ("",document.title,"https://www.apple.com/newsroom/images/environments/stores/Apple-Antara-store-opening-Deirdre-O-Brien-with-apple-team-members-092719_big.jpg.large.jpg");
+        shareModel.shareQQ("",document.title,"http://www.aomoxo.com/images/aomoxo-icon.svg");
     });
 
     $(".weixin-share-article").click(function(){
