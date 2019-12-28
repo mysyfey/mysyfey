@@ -244,7 +244,6 @@
                         } else if (anim.attrUnit == "pw"){//edited
                             var parentWidth = anim.element.parent().width();
                             anim.to = parentWidth / 100 * anim.transformTo;
-                            console.log("parentWidth",parentWidth, " from ",anim.transfrom," to ",anim.transformTo,)
                         }
                              
                     } 
@@ -253,10 +252,6 @@
                     //    anim.transformTo = anim.attrUnit == "vh" ? vhTOpx(anim.transformTo) : vwTOpx(anim.transformTo);
                 }
 
-
-                if(anim.id=="sss-border-frame"){
-                    console.log(anim);
-                }
 
                 if (anim.scrollUnit == "vh") {
 
