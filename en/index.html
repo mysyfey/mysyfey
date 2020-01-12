@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 
 <head>
-    <title>爱梦想首页：12200名一流人才们，该我们出场了！</title>
+    <title>爱梦想主页：12200名一流人才们，该我们出场了！</title>
     <meta charset="UTF-8">
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -18,35 +18,33 @@
             margin-top:60px;
         }
 
-
         .about-cover {
-            background-image: url('images/plan-07-small.jpg');
+            background-image: url('/images/plan-07-small.jpg');
         }
 
         .plan-cover {
-            background-image: url('images/plan-01-ss.jpg');
+            background-image: url('/images/plan-01-ss.jpg');
         }
 
         .team-cover {
-            background-image: url('images/plan-18-small.jpg');
+            background-image: url('/images/plan-18-small.jpg');
         }
 
         .summit-cover {
-            background-image: url('images/plan-06-ss.jpg');
+            background-image: url('/images/plan-06-ss.jpg');
         }
-
-        
+     
         .main-cover {
-            background-image: url('images/cover.jpg');
+            background-image: url('/images/cover.jpg');
             background-position-y:15%;
         }
-
 
         .typography-headline-elevated {
             color:white;
             line-height: 1.2;
             letter-spacing: 4px;
         }
+
         .typography-headline-large {
             color:white;
             line-height: 1.2;
@@ -59,7 +57,6 @@
             letter-spacing: 2px;
         }
 
-
         .join-us-header {
             position: relative;
             background: black;
@@ -67,7 +64,7 @@
 
         .join-us-header .cover-img {
             opacity: .9;            
-            background-image: url('images/summit1.jpg');
+            background-image: url('/images/summit1.jpg');
         }
 
         .mall-project-intro::before {
@@ -88,15 +85,35 @@
                 text-align: center; 
         }
 
+        .lang-switch {
+            padding:0px 12px;
+            border:solid 1px red;
+            position: absolute;
+            right: 58px;
+            color:red;
+            top:23px;
+            font-size: 13px;
+            opacity: .75;
+        }
+
+        .lang-switch:hover {
+            opacity:1;
+        }
+
         @media only screen and (min-width: 768px) {
             .mall-project { 
                 margin-top:120px; 
             }
+            .lang-switch {
+                right: 28px;
+            }
+
         }
 
         @media only screen and (max-width: 767px) {
+            
             .main-cover {
-                background-image: url('images/cover-small.jpg');
+                background-image: url('/images/cover-small.jpg');
             }
 
             .mall-project-intro {
@@ -105,6 +122,7 @@
             }
         }
 
+
     </style>
 </head>
 
@@ -112,7 +130,7 @@
     <header class="gheader fixed-nav open">
         <div class="header-inner vertical-align">
             <a href="/" class="aomoxo-logo">
-                <img height="37" src="images/aomoxo-icon.svg" />
+                <img height="37" src="/images/aomoxo-icon.svg" />
             </a>
             <button class="nav-toggle right-toggle-button">
                 <svg class="nav-toggle-button css-1fe7a5q" viewBox="0 0 24 18">
@@ -128,23 +146,29 @@
             <div class="new-nav delay-hidden">
                 <ul>
                     <li class="selected">
-                        <a href="/">首页</a>
+                        <a href="index.html">主页</a>
                     </li>
                     <li>
-                        <a href="/about.html">关于</a>
+                        <a href="about.html">关于</a>
                     </li>
                     <li>
-                        <a href="/plan.html">爱梦想方案</a>
+                        <a href="plan.html">爱梦想方案</a>
                     </li>
                     <li>
-                        <a href="/team.html">团队</a>
+                        <a href="team.html">团队</a>
                     </li>
                     <li>
-                        <a href="/summit.html">爱梦想峰会</a>
+                        <a href="summit.html">爱梦想峰会</a>
+                    </li>
+                    <li>
+                        <a href="newsroom.html">动态</a>
                     </li>
                 </ul>
             </div>
         </div>
+        <a href="/" class="lang-switch">
+            <p>中</p>
+        </a>
     </header>
     <main class="a-style">
         <div class="story-grid anchor-statement anchor-statement-header">
@@ -160,13 +184,13 @@
         <div class="center-text story-grid text-rail">
             <div class="story-grid-medium center-content large-p">
                 <p>在这里，12200名一流人才将在新的全球舞台上扮演主角，一起创业，一起打造万亿美元市值的新公司，一起追求亿万富豪的新梦想，一起创造改变世界的新<span class="nowrap">奇迹。</span></p>
-                <p><a class="blue" href="/letter.html">阅读创始人的邀请函 ></a></p>
+                <p><a class="blue" href="letter.html">阅读创始人的邀请函 ></a></p>
             </div>
         </div>
         <div class="story-grid-medium center-content">
             <div class="tiles row-medium">
-                <div class="tile">
-                    <a href="/about.html">
+                <div class="tile hover-clear">
+                    <a href="en/about.html">
                         <div class="about-cover cover cover-img"></div>
                         <div class="tile-text">
                             <span>关于爱梦想</span>
@@ -174,8 +198,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="tile">
-                    <a href="/plan.html">
+                <div class="tile hover-clear">
+                    <a href="en/plan.html">
                         <div class="plan-cover cover cover-img"></div>
                         <div class="tile-text">
                             <span>爱梦想方案</span>
@@ -185,8 +209,8 @@
                 </div>
             </div>
             <div class="tiles row-medium">
-                <div class="tile">
-                    <a href="/team.html">
+                <div class="tile hover-clear">
+                    <a href="en/team.html">
                         <div class="team-cover cover cover-img"></div>
                         <div class="tile-text">
                             <span>我们的团队</span>
@@ -194,8 +218,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="tile">
-                    <a href="/summit.html">
+                <div class="tile hover-clear">
+                    <a href="en/summit.html">
                         <div class="summit-cover cover cover-img"></div>
                         <div class="tile-text">
                             <span>爱梦想峰会</span>
@@ -301,7 +325,7 @@
                     <strong>把握机会。</strong>
                     想要人生不凡，就请快点联系我们。加入越早，持股就越高哦！
                     <span class="mobile-disappear"><br></span>
-                    <a class="nowrap" target="_blank" href="/team.html">了解合伙人席位最新变化 ></a>
+                    <a class="nowrap" target="_blank" href="en/team.html">了解合伙人席位最新变化 ></a>
                 </p>
             </div>
         </div-->
@@ -383,25 +407,28 @@
             </div>
             <div class="sitemap">
                 <ul class="footer-links">
-                    <li><a href="/">
+                    <li><a href="index.html">
                             <h4>主页</h4>
                         </a></li>
-                    <li><a href="/about.html">
+                    <li><a href="about.html">
                             <h4>关于</h4>
                         </a></li>
-                    <li><a href="/plan.html">
+                    <li><a href="plan.html">
                             <h4>爱梦想方案</h4>
                         </a></li>
-                    <li><a href="/team.html">
+                    <li><a href="team.html">
                             <h4>团队</h4>
                         </a></li>
-                    <li><a href="/summit.html">
+                    <li><a href="summit.html">
                             <h4>爱梦想峰会</h4>
+                        </a></li>
+                    <li><a href="newsroom.html">
+                            <h4>动态</h4>
                         </a></li>
                 </ul>
                 <div class="foot">
                     <a class="aomoxo-logo">
-                        <img height="37" src="images/aomoxo-icon.svg" />
+                        <img height="37" src="/images/aomoxo-icon.svg" />
                     </a>
                 </div>
             </div>
