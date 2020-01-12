@@ -1,4 +1,3 @@
-  
   function closeNav() {
       $("html").removeClass("nav-open");
       var id;
@@ -41,3 +40,15 @@
   $(".close-nav-button").click(function() {
       closeNav();
   })
+
+
+
+  $(".open-email").click(function() {
+      $(".email-us").removeClass("hide-card");
+  });
+  $(".card-close-button").click(function() {
+      $(".email-us").addClass("hide-card");
+  });
+  $(".card-shade").click(function() {
+      $(".email-us").addClass("hide-card");
+  });
