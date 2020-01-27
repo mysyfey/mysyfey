@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 
 <head>
-    <title>爱梦想：12200名一流人才们，该我们出场了！</title>
+    <title>爱梦想主页：12200名一流人才们，该我们出场了！</title>
     <meta charset="UTF-8">
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -18,34 +18,93 @@
             margin-top:60px;
         }
 
-
         .about-cover {
-            background-image: url('images/plan-07-small.jpg');
+            background-image: url('/images/plan-07-small.jpg');
         }
 
         .plan-cover {
-            background-image: url('images/plan-01-ss.jpg');
+            background-image: url('/images/plan-01-ss.jpg');
         }
 
         .team-cover {
-            background-image: url('images/plan-18-small.jpg');
+            background-image: url('/images/plan-18-small.jpg');
         }
 
         .summit-cover {
-            background-image: url('images/plan-06-ss.jpg');
+            background-image: url('/images/plan-06-ss.jpg');
         }
-
-        
+     
         .main-cover {
-            background-image: url('images/cover.jpg');
+            background-image: url('/images/cover.jpg');
             background-position-y:15%;
         }
 
+        .typography-headline-elevated {
+            color:white;
+            line-height: 1.2;
+            letter-spacing: 4px;
+        }
+
+        .typography-headline-large {
+            color:white;
+            line-height: 1.2;
+            letter-spacing: 4px;
+        }
+
+        .typography-title {
+            line-height: 1.7;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        .join-us-header {
+            position: relative;
+            background: black;
+        }
+
+        .join-us-header .cover-img {
+            opacity: .9;            
+            background-image: url('/images/summit1.jpg');
+        }
+
+        /*.mall-project-intro::before {
+            content:'“';
+        }
+
+        .mall-project-intro::after {
+            content:'”';
+        } */
+
+        .mall-project {
+            padding-top:28vh;
+            padding-bottom:28vh; 
+            text-align: center;         
+        }
+
+        .mall-project p {
+            font-weight: 600; 
+        }
+
+
+        @media only screen and (min-width: 768px) {
+            .mall-project { 
+                margin-top:120px; 
+            }
+
+        }
+
         @media only screen and (max-width: 767px) {
+            
             .main-cover {
-                background-image: url('images/cover-small.jpg');
+                background-image: url('/images/cover-small.jpg');
+            }
+
+            .mall-project-intro {
+                font-weight: 600;
+                text-align: center; 
             }
         }
+
 
     </style>
 </head>
@@ -54,7 +113,7 @@
     <header class="gheader fixed-nav open">
         <div class="header-inner vertical-align">
             <a href="/" class="aomoxo-logo">
-                <img height="37" src="images/aomoxo-icon.svg" />
+                <img height="37" src="/images/aomoxo-icon.svg" />
             </a>
             <button class="nav-toggle right-toggle-button">
                 <svg class="nav-toggle-button css-1fe7a5q" viewBox="0 0 24 18">
@@ -70,23 +129,29 @@
             <div class="new-nav delay-hidden">
                 <ul>
                     <li class="selected">
-                        <a href="/">主页</a>
+                        <a href="index.html">主页</a>
                     </li>
                     <li>
-                        <a href="/about.html">关于</a>
+                        <a href="about.html">关于</a>
                     </li>
                     <li>
-                        <a href="/plan.html">爱梦想方案</a>
+                        <a href="plan.html">爱梦想方案</a>
                     </li>
                     <li>
-                        <a href="/team.html">团队</a>
+                        <a href="team.html">团队</a>
                     </li>
                     <li>
-                        <a href="/summit.html">爱梦想峰会</a>
+                        <a href="summit.html">爱梦想峰会</a>
+                    </li>
+                    <li>
+                        <a href="newsroom.html">动态</a>
                     </li>
                 </ul>
             </div>
         </div>
+        <a href="en/" class="lang-switch">
+            <p>EN</p>
+        </a>
     </header>
     <main class="a-style">
         <div class="story-grid anchor-statement anchor-statement-header">
@@ -107,7 +172,7 @@
         </div>
         <div class="story-grid-medium center-content">
             <div class="tiles row-medium">
-                <div class="tile">
+                <div class="tile hover-clear">
                     <a href="/about.html">
                         <div class="about-cover cover cover-img"></div>
                         <div class="tile-text">
@@ -116,7 +181,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="tile">
+                <div class="tile hover-clear">
                     <a href="/plan.html">
                         <div class="plan-cover cover cover-img"></div>
                         <div class="tile-text">
@@ -127,7 +192,7 @@
                 </div>
             </div>
             <div class="tiles row-medium">
-                <div class="tile">
+                <div class="tile hover-clear">
                     <a href="/team.html">
                         <div class="team-cover cover cover-img"></div>
                         <div class="tile-text">
@@ -136,7 +201,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="tile">
+                <div class="tile hover-clear">
                     <a href="/summit.html">
                         <div class="summit-cover cover cover-img"></div>
                         <div class="tile-text">
@@ -147,7 +212,97 @@
                 </div>
             </div>
         </div>
-        <div class="join-us story-grid">
+
+        <!--div class="recruit-progress-stats text-rail">
+            <div class="viewport-content center-content">
+                <div class="recruit-progress-intro story-grid-small center-content">
+                    <h3 class="typography-headline-small">进步的脚印，数据为证。</h3>
+
+                    <p class="small-text">我们按照严谨的评估流程对供应商的表现打分，衡量各项要求的达标情况。2018 年，共有 770 家制造工厂、物流和维修中心、零售店以及客服中心接受了评估。此外， 我们在冶炼厂和精炼厂也开展了 279 次评估。</p>
+                </div>
+                <div class="graph">
+                    <div class="partner-group" data-total="10" data-progress="1">
+                        <span class="group-label">10名总裁</span>
+                        <ul class="bare-ul progress-container">
+                            <li class="progress-box progress-box-high">
+                                <div class="graph-bar graph-bar-high"></div>
+                                <div class="graph-caption">
+                                    <div class="graph-caption-badge typography-intro-reduced">
+                                       
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="progress-box">
+                                <div class="graph-bar graph-bar-low"></div>
+                                <div class="graph-caption">
+                                    <div class="graph-caption-badge typography-intro-reduced">
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="partner-group" data-total="200" data-progress="15">
+                        <span class="group-label">200合伙人</span>
+                        <ul class="bare-ul progress-container ">
+                            <li class="progress-box progress-box-high">
+                                <div class="graph-bar graph-bar-high"></div>
+                                <div class="graph-caption">
+                                    <div class="graph-caption-badge typography-intro-reduced">
+                                       
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="progress-box">
+                                <div class="graph-bar graph-bar-low"></div>
+                                <div class="graph-caption">
+                                    <div class="graph-caption-badge typography-intro-reduced">
+                                       
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="partner-group" data-total="2000" data-progress="0">
+                        <span class="group-label">2000合伙人</span>
+                        <ul class="bare-ul progress-container">
+                            <li class="progress-box">
+                                <div class="graph-bar graph-bar-low"></div>
+                                <div class="graph-caption">
+                                    <div class="graph-caption-badge typography-intro-reduced">
+                                       
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="partner-group" data-total="10000" data-progress="0">
+                        <span class="group-label">10000合伙人</span>
+                        <ul class="bare-ul progress-container">
+                            <li class="progress-box">
+                                <div class="graph-bar graph-bar-low"></div>
+                                <div class="graph-caption">
+                                    <div class="graph-caption-badge typography-intro-reduced">
+                                       
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div-->
+
+        <div class="mall-project red-section">
+            <div class="story-grid-medium center-content story-grid">
+                <h3 class="typography-headline mall-project-intro">一个不同于天猫淘宝、京东和拼多多的another wonderful网上购物平台，将作为爱梦想公司成百上千个改变世界项目中的“领头羊”。</h3>
+                <p>项目No.1</p>
+
+            </div>
+        </div>
+
+
+        <!--div class="join-us story-grid">
             <div class="story-grid-small center-content">
                 <p>
                     <strong>把握机会。</strong>
@@ -156,6 +311,32 @@
                     <a class="nowrap" target="_blank" href="/team.html">了解合伙人席位最新变化 ></a>
                 </p>
             </div>
+        </div-->
+
+        <div class="join-us story-grid">
+            <div class="story-grid-small center-content">
+                <p>
+                    <strong>first in first get。</strong>
+                    200名十亿美元级合伙人的席位，需要您来争取！
+                    <span class="mobile-disappear"><br></span>
+                    <a class="open-email nowrap">向邮箱投递简历 ></a>
+                </p>
+            </div>
+        </div>
+
+        <div class="email-us flex-center hide-card">
+            <div class="shade card-shade"></div>
+                <div class="a-card center-content story-grid-small">
+                    <a class="close-button card-close-button">
+                        <div class="close-button-inner close-button-inner1">&nbsp;</div>
+                        <div class="close-button-inner close-button-inner2">&nbsp;</div>
+                    </a>
+                    <p>感谢您选择爱梦想，请将个人简历发往指定邮箱，我们会尽快与您联系，安排面试等后续事<span class="nowrap">宜。</span></p>
+                    <br>
+                    <p>国际邮箱：<br><span class="green-text">aomoxo@outlook.com</span></p>
+                    <br>
+                    <p >国内邮箱：<br><span class="green-text">aomoxo@163.com, <br>aomoxo@qq.com</span></p>
+                </div>
         </div>
     </main>
     <div class="footer">
@@ -212,30 +393,32 @@
                     <li><a href="/">
                             <h4>主页</h4>
                         </a></li>
-                    <li><a href="/about.html">
+                    <li><a href="about.html">
                             <h4>关于</h4>
                         </a></li>
-                    <li><a href="/plan.html">
+                    <li><a href="plan.html">
                             <h4>爱梦想方案</h4>
                         </a></li>
-                    <li><a href="/team.html">
+                    <li><a href="team.html">
                             <h4>团队</h4>
                         </a></li>
-                    <li><a href="/summit.html">
+                    <li><a href="summit.html">
                             <h4>爱梦想峰会</h4>
+                        </a></li>
+                    <li><a href="newsroom.html">
+                            <h4>动态</h4>
                         </a></li>
                 </ul>
                 <div class="foot">
                     <a class="aomoxo-logo">
-                        <img height="37" src="images/aomoxo-icon.svg" />
+                        <img height="37" src="/images/aomoxo-icon.svg" />
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-    </script>
 </body>
+<script type='text/javascript' src='/js/graph.js'></script>
 <script type='text/javascript' src='/js/header.js'></script>
 
 </html>
