@@ -1620,11 +1620,15 @@
         }
 
 
-        .bio-info .typography-manifesto {
+        .bio-info .typography-quote {
             margin-top:0!important;
         }
-        .bio-info .typography-headline {
-            margin-bottom:15px;
+        .bio-info .typography-headline-small {
+            margin-bottom:10px;
+        }
+
+        .bio-content p+p{
+            margin-top: 25px;
         }
 
 
@@ -2238,9 +2242,10 @@
                 width: 100%;
             }
 
-            .section-bio .table-row>div {
+            .bio-content {
                 margin-top:25px;
             }
+
 
             .group-label {
                 margin-top: 20px;
