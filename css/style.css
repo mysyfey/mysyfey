@@ -161,7 +161,7 @@
     }
 
     .typography-manifesto {
-        font-size: 40px;
+        font-size: 32px;
         line-height: 1.25;
         letter-spacing: .004em;
     }
@@ -658,7 +658,7 @@
 
     @media only screen and (max-width: 1442px) {
         .typography-manifesto {
-            font-size: 32px;
+            font-size: 40px;
         }
 
     }
