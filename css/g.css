@@ -1258,15 +1258,16 @@
 
         .partner-profile {
             width: 230px;
-            height: 178px;
+            height: 190px;
             margin-bottom:20px;
+            border-radius: 7px;
         }
 
         .partner-profile-list li h3+p{
             margin-top:16px;
         }
 
-        .partner-profile-list li a {
+        .partner-profile-list li .block-link {
             font-weight: 600;
         }
 
@@ -1604,6 +1605,32 @@
         }
 
 
+        .section-bio {
+            padding-top: 52px;
+            padding-bottom: 110px;
+        }
+
+        .table-row {
+            position: relative;
+        }
+
+        .bio-avatar {
+            min-height: 336px;
+            padding-left:50%;            
+        }
+
+
+        .bio-info .typography-manifesto {
+            margin-top:0!important;
+        }
+        .bio-info .typography-headline {
+            margin-bottom:15px;
+        }
+
+
+
+
+
     /* a-style */
 
     
@@ -1730,6 +1757,36 @@
 
             .a-style h3  {
                 line-height: 1.23!important;
+            }
+
+            .bio-header {
+                padding-top: 52px;
+                padding-bottom: 52px;
+                background:#f2f2f2;
+            }
+
+            .bio-info {
+                margin-top: 50px;
+            }
+
+            .table-row::before, .table-row::after {
+                content: ' ';
+                display: table;
+            }
+
+            .table-row::after {
+                clear: both;
+            }
+
+            .table-column {
+                float: left;
+            }
+
+            .large-5 {
+                width: 41.66667%;
+            }
+            .large-offset-1 {
+                margin-left: 8.33333%;
             }
 
             .join-us {
@@ -2177,6 +2234,13 @@
 
         @media only screen and (max-width: 767px) {
 
+            .bio-header .viewport-content {
+                width: 100%;
+            }
+
+            .section-bio .table-row>div {
+                margin-top:25px;
+            }
 
             .group-label {
                 margin-top: 20px;
