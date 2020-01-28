@@ -1620,11 +1620,18 @@
         }
 
 
-        .bio-info .typography-quote {
+        /*.bio-info .typography-quote {
             margin-top:0!important;
         }
         .bio-info .typography-headline-small {
             margin-bottom:10px;
+        }*/
+
+        .bio-info .typography-quote {
+            margin-bottom:10px;
+        }
+        .bio-info .typography-title-large {
+            margin-top:0!important;
         }
 
         .bio-content p+p{
@@ -1770,7 +1777,8 @@
             }
 
             .bio-info {
-                margin-top: 50px;
+                //margin-top: 50px;
+                height: 336px;
             }
 
             .table-row::before, .table-row::after {
@@ -2237,6 +2245,10 @@
         }
 
         @media only screen and (max-width: 767px) {
+
+            .bio-info .typography-quote {
+                font-size: 26px;
+            }
 
             .bio-header .viewport-content {
                 width: 100%;
